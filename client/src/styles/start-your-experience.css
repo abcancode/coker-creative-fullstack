@@ -1,0 +1,536 @@
+/* start-your-experience.css */
+
+/* =========================
+   BOOK YOUR EXPERIENCE
+========================= */
+
+.book-experience {
+  padding: 7rem 3rem;
+  background: var(--light);
+}
+
+.book-experience-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 50px auto 4.5rem;
+}
+
+.book-experience-header h2 {
+  font-family: var(--font-secondary);
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin-bottom: 1.2rem;
+}
+
+.book-experience-header .subheading {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 300;
+  color: #64607d;
+}
+
+.book-experience-header .response-time {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--purple);
+  opacity: 0.85;
+  margin-top: 0.4rem;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.book-experience-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 5rem;
+  align-items: stretch;
+}
+
+/* =========================
+   CUSTOM DATE INPUT
+========================= */
+
+.date-field {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+/* actual input */
+.date-field input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 300;
+  background: var(--light);
+  border: 1px solid rgba(64, 30, 55, 0.2);
+  border-radius: 4px;
+  appearance: none;
+  color: transparent; /* hide native text until selected */
+  cursor: pointer;
+}
+
+/* show text only when selected */
+.date-field input:valid {
+  color: var(--accent);
+}
+
+/* remove ugly native calendar styling */
+.date-field input::-webkit-datetime-edit {
+  color: transparent;
+}
+
+.date-field input:valid::-webkit-datetime-edit {
+  color: var(--accent);
+}
+
+/* placeholder overlay */
+.date-placeholder {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: rgba(64, 30, 55, 0.55);
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* hide placeholder when date is selected */
+.date-field input:valid + .date-placeholder {
+  opacity: 0;
+}
+
+/* focus state */
+.date-field input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+/* =========================
+   LEFT — VISUAL EXPERIENCE
+========================= */
+
+.experience-visual {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 620px;
+
+  /* ✅ soft fallback (no black flash) */
+  background: #f7f3f4; /* or var(--beige) */
+}
+
+/* hidden preload img (forces eager fetch without affecting layout) */
+.book-visual-preload {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 2-layer slideshow */
+.book-visual-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transform: scale(1) translate3d(0, 0, 0);
+  transition:
+    opacity 1.3s ease-in-out,
+    transform 6.5s ease;
+  will-change: opacity, transform;
+}
+
+.book-visual-bg.is-active {
+  opacity: 1;
+}
+
+/* ✅ slow motion: zoom + subtle pan */
+.book-visual-bg.is-zoom {
+  transform: scale(1.06) translate3d(-2.5%, -1.2%, 0);
+}
+
+/* =========================
+   RIGHT — FORM CONTAINER
+========================= */
+
+.experience-form {
+  background: #f7f3f4;
+  padding: 3.2rem;
+  border-radius: 4px;
+}
+
+.form-progress {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-align: right;
+  opacity: 0.5;
+}
+
+.form-progress span {
+  font-family: var(--font-secondary);
+}
+
+/* =========================
+   FORM STEPS
+========================= */
+
+.form-step {
+  display: none;
+  animation: stepFade 0.5s ease forwards;
+}
+
+.form-step.active {
+  display: block;
+}
+
+@keyframes stepFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-step h3 {
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+  opacity: 0.7;
+}
+
+/* =========================
+   INPUTS (TEXT / SELECT / TEXTAREA)
+========================= */
+
+.experience-form input,
+.experience-form select,
+.experience-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.4rem;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  font-weight: 300;
+  background: var(--light);
+  border: 1px solid rgba(64, 30, 55, 0.2);
+  border-radius: 4px;
+  transition: border 0.3s ease;
+}
+
+.experience-form textarea {
+  resize: none;
+}
+
+.experience-form input:focus,
+.experience-form select:focus,
+.experience-form textarea:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.experience-form input::placeholder,
+.experience-form textarea::placeholder {
+  color: rgba(64, 30, 55, 0.55);
+}
+
+/* =========================
+   SELECT PLACEHOLDER COLOR FIX
+========================= */
+
+.experience-form select:has(option[value=""]:checked) {
+  color: rgba(64, 30, 55, 0.55);
+}
+
+.experience-form select option[value=""] {
+  color: rgba(64, 30, 55, 0.55);
+}
+
+/* =========================
+   SELECT ARROW
+========================= */
+
+.experience-form select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(64, 30, 55, 0.6) 50%),
+    linear-gradient(135deg, rgba(64, 30, 55, 0.6) 50%, transparent 50%);
+  background-position:
+    calc(100% - 22px) calc(50% - 2px),
+    calc(100% - 16px) calc(50% - 2px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* =========================
+   SELECT OPTION FONT — ONLY OPTIONS
+========================= */
+
+.experience-form select option {
+  font-family: var(--font-primary);
+}
+
+/* =========================
+   CHECKBOX RESET (CRITICAL FIX)
+========================= */
+
+.experience-form input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--purple);
+}
+
+/* =========================
+   CHECKBOX GROUP (FIXED)
+========================= */
+
+.checkbox-group {
+  margin: 1.6rem 0 1.2rem;
+}
+
+.checkbox-label {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+  display: block;
+  opacity: 0.75;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+.checkbox-item span {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+}
+
+/* =========================
+   FILE UPLOAD
+========================= */
+
+.file-upload {
+  display: block;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.4rem;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  background: var(--light);
+  border: 1px solid rgba(64, 30, 55, 0.2);
+  border-radius: 4px;
+  color: rgba(64, 30, 55, 0.55);
+  cursor: pointer;
+}
+
+.file-upload:hover {
+  border-color: var(--purple);
+}
+
+/* =========================
+   IMAGE PREVIEW GRID
+========================= */
+
+.image-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 12px;
+  margin-bottom: 1.4rem;
+}
+
+.image-preview-grid img {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.form-actions button {
+  font-family: var(--font-secondary);
+  letter-spacing: 2px;
+  padding: 0.85rem 2.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-back {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-next {
+  background: var(--accent);
+  border: none;
+  color: var(--light);
+}
+
+.btn-submit {
+  background: var(--purple);
+  border: none;
+  color: var(--light);
+  display: none;
+}
+
+/* =========================
+   BUDGET RANGE
+========================= */
+
+.budget-range {
+  margin: 1.6rem 0 2rem;
+}
+
+.budget-label {
+  display: block;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+  opacity: 0.75;
+}
+
+.budget-value {
+  font-family: "Bona SC", var(--font-secondary);
+  font-size: 16px;
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+
+.budget-range input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: var(--purple);
+}
+
+/* =========================
+   SUCCESS EXPERIENCE (RESTORED)
+========================= */
+
+.experience-success {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.success-image {
+  width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  margin-bottom: 3rem;
+}
+
+.success-content h2 {
+  font-family: var(--font-secondary);
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.success-content p {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  line-height: 28px;
+  color: #64607d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .book-experience-inner {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .experience-visual {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-visual {
+    min-height: 360px;
+  }
+
+  .experience-form {
+    padding: 2.4rem 2rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+
+  .success-image {
+    height: 280px;
+  }
+
+  .success-content h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .book-experience {
+    padding: 7rem 1.3rem;
+  }
+}

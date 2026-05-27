@@ -1,0 +1,38 @@
+.visual-transition {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+/* BOTH layers */
+.visual-bg {
+  position: absolute;
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0;
+  transform: scale(1);
+
+  transition: opacity 1.4s ease-in-out, transform 6s ease;
+  z-index: 1;
+}
+
+/* Active layer */
+.visual-bg.active {
+  opacity: 1;
+}
+
+/* Gentle zoom */
+.visual-bg.zoom {
+  transform: scale(1.05);
+}
+
+/* Mobile safety */
+@media (max-width: 768px) {
+  .visual-transition {
+    height: 60vh;
+  }
+}

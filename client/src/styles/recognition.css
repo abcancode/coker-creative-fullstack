@@ -1,0 +1,76 @@
+/* RECOGNITION */
+.recognition {
+  padding: 3rem;
+  text-align: center;
+}
+
+.recognition h3 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  margin-bottom: 50px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5rem;
+  margin-top: 3rem;
+}
+
+.logos img {
+  width: 80px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.logos img:hover {
+  filter: grayscale(0);
+}
+
+#forbes-img {
+  width: 40px;
+}
+
+/* =========================
+   RECOGNITION — TABLET
+========================= */
+@media (max-width: 1024px) {
+  .recognition {
+    padding: 2.5rem 2rem;
+  }
+
+  .logos {
+    gap: 4rem;
+  }
+}
+
+/* =========================
+   RECOGNITION — MOBILE
+========================= */
+@media (max-width: 640px) {
+  .recognition {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .recognition h3 {
+    font-size: 24px;
+    margin-bottom: 2rem;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  .logos img {
+    width: 64px;
+  }
+
+  #forbes-img {
+    width: 36px;
+  }
+}
