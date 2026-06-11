@@ -98,7 +98,7 @@ function Login() {
               lineHeight: "0.9",
               color: "#401e37",
               margin: 0,
-              fontWeight: "700",
+              fontWeight: "400",
             }}
           >
             Coker

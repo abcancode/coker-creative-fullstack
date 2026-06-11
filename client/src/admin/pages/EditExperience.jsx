@@ -33,13 +33,14 @@ function EditExperience() {
     fullDescription: "",
     heroImages: [],
     gallery: [],
+    featuredVideo: "",
   });
 
   // FETCH EXPERIENCE
   const fetchExperience = async () => {
     try {
       const { data } = await axios.get(
-        `http://127.0.0.1:8000/api/experiences/${id}`,
+        `https://coker-creative-fullstack.onrender.com/api/experiences/${id}`,
       );
 
       setFormData({
@@ -49,6 +50,7 @@ function EditExperience() {
         fullDescription: data.fullDescription || "",
         heroImages: data.heroImages || [],
         gallery: data.gallery || [],
+        featuredVideo: data.featuredVideo || "",
       });
     } catch (error) {
       console.log(error);
@@ -88,7 +90,7 @@ function EditExperience() {
         imageData.append("image", file);
 
         const { data } = await axios.post(
-          "http://127.0.0.1:8000/api/experiences/upload",
+          "https://coker-creative-fullstack.onrender.com/api/experiences/upload",
           imageData,
         );
 
@@ -123,7 +125,7 @@ function EditExperience() {
       imageData.append("image", file);
 
       const { data } = await axios.post(
-        "http://127.0.0.1:8000/api/experiences/upload",
+        "https://coker-creative-fullstack.onrender.com/api/experiences/upload",
         imageData,
       );
 
@@ -152,7 +154,10 @@ function EditExperience() {
     e.preventDefault();
 
     try {
-      await axios.put(`http://127.0.0.1:8000/api/experiences/${id}`, formData);
+      await axios.put(
+        `https://coker-creative-fullstack.onrender.com/api/experiences/${id}`,
+        formData,
+      );
 
       toast.success("Experience updated successfully");
 
@@ -400,6 +405,17 @@ function EditExperience() {
             rows="6"
             style={{
               ...textareaStyle,
+              marginTop: "18px",
+            }}
+          />
+          <input
+            type="text"
+            name="featuredVideo"
+            placeholder="Behind The Experience Video URL"
+            value={formData.featuredVideo}
+            onChange={handleChange}
+            style={{
+              ...inputStyle,
               marginTop: "18px",
             }}
           />

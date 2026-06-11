@@ -1,10 +1,26 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import Sidebar from "../components/Sidebar";
 
 function AdminLayout({ children, title, subtitle }) {
   const navigate = useNavigate();
 
   const location = useLocation();
+
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 900);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   let admin = null;
 
@@ -33,7 +49,11 @@ function AdminLayout({ children, title, subtitle }) {
       }}
     >
       {/* SIDEBAR */}
-      <Sidebar currentPath={location.pathname} />
+      <Sidebar
+        currentPath={location.pathname}
+        mobileOpen={mobileOpen}
+        setMobileOpen={setMobileOpen}
+      />
 
       {/* MAIN */}
       <div
@@ -41,47 +61,86 @@ function AdminLayout({ children, title, subtitle }) {
           flex: 1,
           display: "flex",
           flexDirection: "column",
+          width: "100%",
         }}
       >
         {/* TOPBAR */}
         <div
           style={{
-            height: "90px",
+            minHeight: "90px",
             background: "#ffffff",
             borderBottom: "1px solid #ece7e2",
-            padding: "0 40px",
+            padding: isMobile ? "20px" : "0 40px",
+
             display: "flex",
-            alignItems: "center",
+
+            flexDirection: isMobile ? "column" : "row",
+
+            alignItems: isMobile ? "flex-start" : "center",
+
             justifyContent: "space-between",
+
+            gap: isMobile ? "20px" : "0",
+
             position: "sticky",
             top: 0,
             zIndex: 50,
           }}
         >
           {/* LEFT */}
-          <div>
-            <h1
-              style={{
-                margin: 0,
-                color: "#401e37",
-                fontSize: "30px",
-                fontFamily: "'Bona Nova SC', serif",
-              }}
-            >
-              {title}
-            </h1>
-
-            {subtitle && (
-              <p
+          <div
+            style={{
+              display: "flex",
+              alignItems: isMobile ? "flex-start" : "center",
+              gap: "18px",
+              width: "100%",
+            }}
+          >
+            {/* MOBILE MENU */}
+            {isMobile && (
+              <button
+                onClick={() => setMobileOpen(true)}
                 style={{
-                  margin: "6px 0 0",
-                  color: "#6b7280",
-                  fontSize: "14px",
+                  width: "48px",
+                  height: "48px",
+                  borderRadius: "14px",
+                  border: "none",
+                  background: "#401e37",
+                  color: "#ffffff",
+                  fontSize: "22px",
+                  cursor: "pointer",
+                  flexShrink: 0,
                 }}
               >
-                {subtitle}
-              </p>
+                ☰
+              </button>
             )}
+
+            <div>
+              <h1
+                style={{
+                  margin: 0,
+                  color: "#401e37",
+                  fontSize: isMobile ? "24px" : "30px",
+                  fontFamily: "'Bona Nova SC', serif",
+                }}
+              >
+                {title}
+              </h1>
+
+              {subtitle && (
+                <p
+                  style={{
+                    margin: "6px 0 0",
+                    color: "#6b7280",
+                    fontSize: "14px",
+                    lineHeight: "1.6",
+                  }}
+                >
+                  {subtitle}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* RIGHT */}
@@ -89,13 +148,20 @@ function AdminLayout({ children, title, subtitle }) {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "18px",
+
+              width: isMobile ? "100%" : "auto",
+
+              justifyContent: isMobile ? "space-between" : "flex-end",
+
+              gap: "16px",
+
+              flexWrap: "wrap",
             }}
           >
             {/* ADMIN INFO */}
             <div
               style={{
-                textAlign: "right",
+                textAlign: isMobile ? "left" : "right",
               }}
             >
               <p
@@ -113,6 +179,7 @@ function AdminLayout({ children, title, subtitle }) {
                 style={{
                   color: "#9ca3af",
                   fontSize: "12px",
+                  wordBreak: "break-word",
                 }}
               >
                 {admin?.email || ""}
@@ -132,6 +199,7 @@ function AdminLayout({ children, title, subtitle }) {
                 justifyContent: "center",
                 fontWeight: "700",
                 fontSize: "16px",
+                flexShrink: 0,
               }}
             >
               {admin?.name?.charAt(0) || "A"}
@@ -148,6 +216,7 @@ function AdminLayout({ children, title, subtitle }) {
                 borderRadius: "12px",
                 cursor: "pointer",
                 fontWeight: "600",
+                whiteSpace: "nowrap",
               }}
             >
               Logout
@@ -158,8 +227,11 @@ function AdminLayout({ children, title, subtitle }) {
         {/* PAGE CONTENT */}
         <div
           style={{
-            padding: "40px",
+            padding: isMobile ? "20px" : "40px",
             flex: 1,
+            width: "100%",
+            boxSizing: "border-box",
+            overflowX: "hidden",
           }}
         >
           {children}

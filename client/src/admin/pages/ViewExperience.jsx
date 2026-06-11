@@ -30,7 +30,7 @@ function ViewExperience() {
   const fetchExperience = async () => {
     try {
       const { data } = await axios.get(
-        `http://127.0.0.1:8000/api/experiences/${id}`,
+        `https://coker-creative-fullstack.onrender.com/api/experiences/${id}`,
       );
 
       setExperience(data);
@@ -51,7 +51,7 @@ function ViewExperience() {
 
     try {
       await axios.delete(
-        `http://127.0.0.1:8000/api/experiences/${experience._id}`,
+        `https://coker-creative-fullstack.onrender.com/api/experiences/${experience._id}`,
       );
 
       navigate("/admin/experiences");

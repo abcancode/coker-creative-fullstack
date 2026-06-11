@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/api/featured-brands";
+const API = "https://coker-creative-fullstack.onrender.com/api/featured-brands";
 
 // GET BRANDS
 export const getBrands = async () => {

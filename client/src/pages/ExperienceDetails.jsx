@@ -187,6 +187,66 @@ const ExperienceDetails = () => {
         )}
       </section>
 
+      {data.featuredVideo && (
+        <section
+          style={{
+            maxWidth: "1100px",
+            margin: "80px auto",
+            padding: "0 24px",
+            textAlign: "center",
+          }}
+        >
+          <p
+            className="video-label"
+            style={{
+              color: "#8b6b7d",
+              letterSpacing: "2px",
+              textTransform: "uppercase",
+              marginBottom: "12px",
+              fontSize: "13px",
+            }}
+          >
+            Behind The Experience
+          </p>
+
+          <h2
+            style={{
+              color: "#401e37",
+              marginBottom: "18px",
+              fontFamily: "'Bona Nova SC', serif",
+            }}
+          >
+            A conversation with Gozie Coker-Mosuro
+          </h2>
+
+          <p
+            style={{
+              maxWidth: "700px",
+              margin: "0 auto 40px",
+              color: "#666",
+              lineHeight: "1.8",
+            }}
+          >
+            Hear the inspiration, strategy and creative thinking behind this
+            experience.
+          </p>
+
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster={heroUrls?.[0]}
+            style={{
+              width: "100%",
+              borderRadius: "24px",
+              overflow: "hidden",
+            }}
+          >
+            <source src={data.featuredVideo} type="video/mp4" />
+          </video>
+        </section>
+      )}
+
       {/* GALLERY */}
       <section className="experience-gallery">
         {galleryUrls.map((src, i) => (

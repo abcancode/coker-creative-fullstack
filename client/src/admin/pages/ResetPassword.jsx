@@ -26,7 +26,7 @@ function ResetPassword() {
       setLoading(true);
 
       await axios.post(
-        `http://127.0.0.1:8000/api/auth/reset-password/${token}`,
+        `https://coker-creative-fullstack.onrender.com/api/auth/reset-password/${token}`,
         { password },
       );
 

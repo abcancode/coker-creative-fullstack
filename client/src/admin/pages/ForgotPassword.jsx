@@ -17,9 +17,12 @@ function ForgotPassword() {
     try {
       setLoading(true);
 
-      await axios.post("http://127.0.0.1:8000/api/auth/forgot-password", {
-        email,
-      });
+      await axios.post(
+        "https://coker-creative-fullstack.onrender.com/api/auth/forgot-password",
+        {
+          email,
+        },
+      );
 
       setSuccess(true);
 

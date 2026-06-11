@@ -35,6 +35,7 @@ function Experiences() {
     fullDescription: "",
     heroImages: [],
     gallery: [],
+    featuredVideo: "",
   });
 
   // FETCH EXPERIENCES
@@ -151,6 +152,7 @@ function Experiences() {
         fullDescription: "",
         heroImages: [],
         gallery: [],
+        featuredVideo: "",
       });
 
       fetchExperiencesData();
@@ -551,6 +553,18 @@ function Experiences() {
             rows="6"
             style={{
               ...textareaStyle,
+              marginTop: "18px",
+            }}
+          />
+
+          <input
+            type="text"
+            name="featuredVideo"
+            placeholder="Behind The Experience Video URL"
+            value={formData.featuredVideo}
+            onChange={handleChange}
+            style={{
+              ...inputStyle,
               marginTop: "18px",
             }}
           />

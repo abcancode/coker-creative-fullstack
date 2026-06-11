@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://127.0.0.1:8000/api/inquiries";
+const API = "https://coker-creative-fullstack.onrender.com/api/inquiries";
 
 // CREATE
 export const createInquiry = async (formData) => {

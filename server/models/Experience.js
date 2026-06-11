@@ -32,6 +32,11 @@ const experienceSchema = new mongoose.Schema(
       type: [String],
       default: [],
     },
+
+    featuredVideo: {
+      type: String,
+      default: "",
+    },
   },
   {
     timestamps: true,
