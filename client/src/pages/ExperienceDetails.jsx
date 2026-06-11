@@ -186,73 +186,83 @@ const ExperienceDetails = () => {
           </p>
         )}
       </section>
-
       {data.featuredVideo && (
         <section
           style={{
-            maxWidth: "1100px",
-            margin: "40px auto 70px",
+            maxWidth: "1200px",
+            margin: "60px auto 90px",
             padding: "0 24px",
-            textAlign: "center",
           }}
         >
-          <p
-            className="video-label"
-            style={{
-              color: "#8b6b7d",
-              letterSpacing: "2px",
-              textTransform: "uppercase",
-              marginBottom: "12px",
-              fontSize: "13px",
-            }}
-          >
-            Exclusive Interview
-          </p>
-
-          <h2
-            style={{
-              color: "#401e37",
-              marginBottom: "18px",
-              fontFamily: "'Bona Nova SC', serif",
-              fontSize: "36px",
-              lineHeight: "1.2",
-            }}
-          >
-            Behind The Experience
-          </h2>
-
-          <p
-            style={{
-              maxWidth: "700px",
-              margin: "0 auto 40px",
-              color: "#666",
-              lineHeight: "1.8",
-            }}
-          >
-            Hear Gozie Coker-Mosuro share the inspiration, strategy and creative
-            direction behind this celebration, offering a deeper look into the
-            thinking and intention behind every detail.
-          </p>
           <div
             style={{
-              maxWidth: "500px",
-              margin: "0 auto",
-              borderRadius: "24px",
-              overflow: "hidden",
+              background: "#faf8f6",
+              borderRadius: "32px",
+              padding: "60px 40px",
+              textAlign: "center",
+              border: "1px solid #ece7e2",
             }}
           >
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster={heroUrls?.[0]}
+            <p
+              className="video-label"
               style={{
-                width: "100%",
-                display: "block",
+                color: "#8b6b7d",
+                letterSpacing: "2px",
+                textTransform: "uppercase",
+                marginBottom: "12px",
+                fontSize: "13px",
               }}
             >
-              <source src={data.featuredVideo} type="video/mp4" />
-            </video>
+              Exclusive Interview
+            </p>
+
+            <h2
+              style={{
+                color: "#401e37",
+                marginBottom: "18px",
+                fontFamily: "'Bona Nova SC', serif",
+                fontSize: "36px",
+                lineHeight: "1.2",
+              }}
+            >
+              Behind The Experience
+            </h2>
+
+            <p
+              style={{
+                maxWidth: "700px",
+                margin: "0 auto 40px",
+                color: "#666",
+                lineHeight: "1.8",
+              }}
+            >
+              Hear Gozie Coker-Mosuro share the inspiration, strategy and
+              creative direction behind this celebration, offering a deeper look
+              into the thinking and intention behind every detail.
+            </p>
+
+            <div
+              style={{
+                maxWidth: "600px",
+                margin: "0 auto",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 15px 40px rgba(0,0,0,0.12)",
+              }}
+            >
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster={heroUrls?.[0]}
+                style={{
+                  width: "100%",
+                  display: "block",
+                }}
+              >
+                <source src={data.featuredVideo} type="video/mp4" />
+              </video>
+            </div>
           </div>
         </section>
       )}
