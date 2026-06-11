@@ -191,7 +191,7 @@ const ExperienceDetails = () => {
         <section
           style={{
             maxWidth: "1100px",
-            margin: "80px auto",
+            margin: "40px auto 70px",
             padding: "0 24px",
             textAlign: "center",
           }}
@@ -206,7 +206,7 @@ const ExperienceDetails = () => {
               fontSize: "13px",
             }}
           >
-            Behind The Experience
+            Exclusive Interview
           </p>
 
           <h2
@@ -214,9 +214,11 @@ const ExperienceDetails = () => {
               color: "#401e37",
               marginBottom: "18px",
               fontFamily: "'Bona Nova SC', serif",
+              fontSize: "36px",
+              lineHeight: "1.2",
             }}
           >
-            A conversation with Gozie Coker-Mosuro
+            Behind The Experience
           </h2>
 
           <p
@@ -227,23 +229,31 @@ const ExperienceDetails = () => {
               lineHeight: "1.8",
             }}
           >
-            Hear the inspiration, strategy and creative thinking behind this
-            experience.
+            Hear Gozie Coker-Mosuro share the inspiration, strategy and creative
+            direction behind this celebration, offering a deeper look into the
+            thinking and intention behind every detail.
           </p>
-
-          <video
-            controls
-            playsInline
-            preload="metadata"
-            poster={heroUrls?.[0]}
+          <div
             style={{
-              width: "100%",
+              maxWidth: "500px",
+              margin: "0 auto",
               borderRadius: "24px",
               overflow: "hidden",
             }}
           >
-            <source src={data.featuredVideo} type="video/mp4" />
-          </video>
+            <video
+              controls
+              playsInline
+              preload="metadata"
+              poster={heroUrls?.[0]}
+              style={{
+                width: "100%",
+                display: "block",
+              }}
+            >
+              <source src={data.featuredVideo} type="video/mp4" />
+            </video>
+          </div>
         </section>
       )}
 
