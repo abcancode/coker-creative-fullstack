@@ -7,6 +7,7 @@ import {
   getIPAddress,
   getLanguage,
 } from "../utils/analyticsHelpers.js";
+import crypto from "node:crypto";
 
 /**
  * Supported analytics events.
@@ -24,10 +25,9 @@ const validatePayload = (payload = {}) => {
   if (!VALID_EVENTS.includes(payload.event)) {
     throw new Error(`Unsupported analytics event: ${payload.event}`);
   }
-
-  if (!payload.sessionId) {
-    throw new Error("Session ID is required.");
-  }
+  // Session ID is optional.
+  // If the client doesn't provide one,
+  // one will be generated when saving the event.
 };
 
 /**
@@ -67,9 +67,9 @@ export const trackEvent = async (req) => {
   const analytics = await Analytics.create({
     event: payload.event,
 
-    sessionId: payload.sessionId,
+    sessionId: payload.sessionId || crypto.randomUUID(),
 
-    visitorId: payload.visitorId || "",
+    visitorId: payload.visitorId || crypto.randomUUID(),
 
     source: payload.source || "website",
 
