@@ -54,6 +54,14 @@ app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
+app.get("/api/health", (req, res) => {
+  res.json({
+    status: "ok",
+    version: "b7b17a9",
+    analyticsRegistered: true,
+  });
+});
+
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
