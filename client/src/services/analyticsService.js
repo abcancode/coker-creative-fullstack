@@ -1,15 +1,17 @@
 import api from "./api";
+import { getVisitorId, getSessionId } from "../utils/visitorIdentity";
 
 /**
  * Record a custom analytics event.
  */
 export const trackEvent = async (payload) => {
-  try {
-    await api.post("/analytics/events", payload);
-  } catch (error) {
-    // Analytics should never interrupt the user experience.
-    console.error("[Analytics]", error);
-  }
+  return api.post("/analytics/events", {
+    ...payload,
+
+    visitorId: getVisitorId(),
+
+    sessionId: getSessionId(),
+  });
 };
 
 /**
