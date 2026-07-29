@@ -9,7 +9,7 @@
 .what-we-do h3 {
   text-align: center;
   font-family: var(--font-secondary);
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 400;
 }
 
@@ -76,7 +76,9 @@
   background: var(--beige);
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 @media (hover: hover) {

@@ -72,7 +72,7 @@ const Hero = () => {
 
   const heroVideo =
     content?.heroVideo ||
-    "https://res.cloudinary.com/djp4j1mvn/video/upload/f_auto,q_auto:best,vc_auto,ac_none,w_1920,c_limit/v1768616678/bfbcufg7rvw9q0nrpz3h.mp4";
+    "https://res.cloudinary.com/djp4j1mvn/video/upload/f_auto,q_auto:best,vc_auto,ac_none,w_1920,c_limit/v1784208777/zlt99jtdpnbpa0cpmksg.mp4";
 
   const heroPoster =
     content?.heroPoster || "/assets/images/home-hero-fallback.png";

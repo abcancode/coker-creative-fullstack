@@ -16,6 +16,8 @@ import recognitionRoutes from "./routes/recognitionRoutes.js";
 
 import inquiryRoutes from "./routes/inquiryRoutes.js";
 
+import analyticsRoutes from "./routes/analyticsRoutes.js";
+
 dotenv.config();
 
 const app = express();
@@ -35,6 +37,8 @@ app.use("/api/testimonials", testimonialRoutes);
 app.use("/api/recognitions", recognitionRoutes);
 
 app.use("/api/inquiries", inquiryRoutes);
+
+app.use("/api/analytics", analyticsRoutes);
 
 // CONNECT DATABASE
 mongoose

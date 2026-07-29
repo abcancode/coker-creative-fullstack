@@ -27,6 +27,7 @@ import FeaturedBrands from "./admin/pages/FeaturedBrands";
 import Testimonials from "./admin/pages/Testimonials";
 import Recognitions from "./admin/pages/Recognitions";
 // import Inquiries from "./admin/pages/Inquiries";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 import ForgotPassword from "./admin/pages/ForgotPassword";
 import ResetPassword from "./admin/pages/ResetPassword";
 
@@ -44,6 +45,8 @@ function App() {
 
       {/* HIDE PUBLIC LAYOUT ON ADMIN PAGES */}
       {!isAdminRoute && <Header />}
+
+      {!isAdminRoute && <AnalyticsTracker />}
 
       <Routes>
         {/* PUBLIC WEBSITE ROUTES */}
@@ -95,7 +98,11 @@ function App() {
 
         <Route
           path="/admin/experiences/edit/:id"
-          element={<EditExperience />}
+          element={
+            <ProtectedRoute>
+              <EditExperience />
+            </ProtectedRoute>
+          }
         />
 
         <Route
