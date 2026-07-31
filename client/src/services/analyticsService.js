@@ -6,6 +6,14 @@ import { getVisitorId, getSessionId } from "../utils/visitorIdentity";
  */
 export const trackEvent = async (payload) => {
   return api.post("/analytics/events", {
+    page: payload.page || window.location.pathname,
+
+    title: payload.title || document.title,
+
+    referrer: payload.referrer || document.referrer,
+
+    source: "website",
+
     ...payload,
 
     visitorId: getVisitorId(),
@@ -44,6 +52,33 @@ export const trackExperienceView = async ({ slug, title, page }) => {
 };
 
 /**
+ * Track gallery open.
+ */
+export const trackGalleryOpen = async ({ experienceSlug, experienceTitle }) => {
+  return trackEvent({
+    event: "gallery_open",
+    experienceSlug,
+    experienceTitle,
+  });
+};
+
+/**
+ * Track gallery image view.
+ */
+export const trackGalleryImageView = async ({
+  experienceSlug,
+  experienceTitle,
+  imageIndex,
+}) => {
+  return trackEvent({
+    event: "gallery_image_view",
+    experienceSlug,
+    experienceTitle,
+    imageIndex,
+  });
+};
+
+/**
  * Track video play.
  */
 export const trackVideoPlay = async ({ title, duration = 0 }) => {
@@ -57,11 +92,22 @@ export const trackVideoPlay = async ({ title, duration = 0 }) => {
 /**
  * Track CTA click.
  */
-export const trackCTAClick = async ({ buttonName, section }) => {
+export const trackCTAClick = async ({
+  buttonName,
+  section,
+  experienceSlug = "",
+  experienceTitle = "",
+}) => {
   return trackEvent({
     event: "cta_click",
+
     buttonName,
+
     section,
+
+    experienceSlug,
+
+    experienceTitle,
   });
 };
 
@@ -78,7 +124,54 @@ export const trackContactSubmission = async () => {
  * Retrieve dashboard analytics.
  */
 export const getDashboard = async () => {
-  const response = await api.get("/analytics/dashboard");
+  const { data } = await api.get("/analytics/dashboard");
+
+  return data.data;
+};
+
+/**
+ * Retrieve dashboard overview KPIs.
+ */
+export const getOverview = async () => {
+  const response = await api.get("/analytics/dashboard/overview");
 
   return response.data;
+};
+
+/**
+ * Track video pause.
+ */
+export const trackVideoPause = async ({ title, duration = 0 }) => {
+  return trackEvent({
+    event: "video_pause",
+    videoTitle: title,
+    duration,
+  });
+};
+
+/**
+ * Track video complete.
+ */
+export const trackVideoComplete = async ({ title, duration = 0 }) => {
+  return trackEvent({
+    event: "video_complete",
+    videoTitle: title,
+    duration,
+  });
+};
+
+/**
+ * Track video watch progress.
+ */
+export const trackVideoProgress = async ({
+  title,
+  watchPercentage,
+  duration = 0,
+}) => {
+  return trackEvent({
+    event: "video_progress",
+    videoTitle: title,
+    watchPercentage,
+    duration,
+  });
 };

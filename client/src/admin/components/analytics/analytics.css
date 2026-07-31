@@ -1,0 +1,189 @@
+/* ===========================
+   Analytics Layout
+=========================== */
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 10px;
+}
+
+/* ===========================
+   Analytics Card
+=========================== */
+
+.analytics-card {
+  background: #ffffff;
+  border: 1px solid #ece7e2;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 30px rgba(64, 30, 55, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.analytics-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 18px 45px rgba(64, 30, 55, 0.12);
+}
+
+.analytics-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analytics-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 16px;
+
+  background: #f5f2ef;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #401e37;
+}
+
+.analytics-title {
+  margin: 18px 0 12px;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+.analytics-value {
+  margin: 0;
+
+  color: #401e37;
+
+  font-family: "Bona Nova SC", serif;
+
+  font-size: clamp(2.2rem, 4vw, 3rem);
+
+  line-height: 1;
+}
+
+.analytics-description {
+  margin-top: 16px;
+
+  color: #9ca3af;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* ===========================
+   Skeleton
+=========================== */
+
+.analytics-skeleton {
+  background: linear-gradient(90deg, #f3f3f3 25%, #ececec 50%, #f3f3f3 75%);
+
+  background-size: 300% 100%;
+
+  animation: shimmer 1.3s infinite;
+
+  border-radius: 12px;
+}
+
+.analytics-skeleton-card {
+  background: #ffffff;
+
+  border: 1px solid #ece7e2;
+
+  border-radius: 24px;
+
+  padding: 28px;
+}
+
+.analytics-skeleton-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.analytics-skeleton-title {
+  width: 45%;
+  height: 16px;
+
+  margin-top: 24px;
+}
+
+.analytics-skeleton-value {
+  width: 60%;
+  height: 46px;
+
+  margin-top: 22px;
+}
+
+.analytics-skeleton-text {
+  width: 80%;
+  height: 14px;
+
+  margin-top: 20px;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 300% 0;
+  }
+
+  to {
+    background-position: -300% 0;
+  }
+}
+
+/* ===========================
+   Analytics Panel
+=========================== */
+
+.analytics-panel {
+  background: #ffffff;
+
+  border: 1px solid #ece7e2;
+
+  border-radius: 24px;
+
+  padding: 28px;
+
+  margin-top: 32px;
+
+  box-shadow: 0 8px 30px rgba(64, 30, 55, 0.06);
+}
+
+.analytics-panel-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.analytics-panel-header h2 {
+  margin: 0;
+
+  color: #401e37;
+
+  font-size: 28px;
+
+  font-family: "Bona Nova SC", serif;
+}
+
+.analytics-panel-header p {
+  margin-top: 8px;
+
+  color: #6b7280;
+}

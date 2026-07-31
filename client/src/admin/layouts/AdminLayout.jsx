@@ -58,7 +58,6 @@ function AdminLayout({ children, title, subtitle }) {
       {/* MAIN */}
       <div
         style={{
-          flex: 1,
           display: "flex",
           flexDirection: "column",
           width: "100%",

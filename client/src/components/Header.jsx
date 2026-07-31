@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { trackCTAClick } from "../services/analyticsService";
 import "../styles/header.css";
 
 const Header = () => {
@@ -43,7 +44,17 @@ const Header = () => {
         <nav className="nav-links">
           <Link to="/who-we-are">WHO WE ARE</Link>
           <Link to="/experiences">EXPERIENCES</Link>
-          <Link to="/start-your-experience">START YOUR EXPERIENCE</Link>
+          <Link
+            to="/start-your-experience"
+            onClick={() =>
+              trackCTAClick({
+                buttonName: "Start Your Experience",
+                section: "Header",
+              }).catch(console.error)
+            }
+          >
+            START YOUR EXPERIENCE
+          </Link>
         </nav>
 
         {/* Hamburger */}
@@ -67,7 +78,17 @@ const Header = () => {
         <Link to="/experiences" onClick={() => setMenuOpen(false)}>
           EXPERIENCES
         </Link>
-        <Link to="/start-your-experience" onClick={() => setMenuOpen(false)}>
+        <Link
+          to="/start-your-experience"
+          onClick={() => {
+            trackCTAClick({
+              buttonName: "Start Your Experience",
+              section: "Mobile Menu",
+            }).catch(console.error);
+
+            setMenuOpen(false);
+          }}
+        >
           START YOUR EXPERIENCE
         </Link>
       </div>

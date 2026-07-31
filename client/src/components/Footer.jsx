@@ -6,6 +6,8 @@ import "../styles/footer.css";
 
 import { getSiteContent } from "../services/siteContentService";
 
+import { trackCTAClick } from "../services/analyticsService";
+
 const Footer = () => {
   const footerRef = useRef(null);
 
@@ -84,6 +86,12 @@ const Footer = () => {
         <Link
           to={content?.footerButtonLink || "/start-your-experience"}
           className="btn btn-light btn-cta"
+          onClick={() =>
+            trackCTAClick({
+              buttonName: content?.footerButtonText || "START YOUR EXPERIENCE",
+              section: "Footer",
+            }).catch(console.error)
+          }
         >
           <span className="cta-main">
             {content?.footerButtonText || "START YOUR EXPERIENCE"}{" "}
@@ -115,6 +123,12 @@ const Footer = () => {
             {socialLinks.instagram && (
               <a
                 href={socialLinks.instagram}
+                onClick={() =>
+                  trackCTAClick({
+                    buttonName: "Instagram",
+                    section: "Footer Social",
+                  }).catch(console.error)
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -126,6 +140,12 @@ const Footer = () => {
             {socialLinks.facebook && (
               <a
                 href={socialLinks.facebook}
+                onClick={() =>
+                  trackCTAClick({
+                    buttonName: "Facebook",
+                    section: "Footer Social",
+                  }).catch(console.error)
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -137,6 +157,12 @@ const Footer = () => {
             {socialLinks.twitter && (
               <a
                 href={socialLinks.twitter}
+                onClick={() =>
+                  trackCTAClick({
+                    buttonName: "X",
+                    section: "Footer Social",
+                  }).catch(console.error)
+                }
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"

@@ -2,6 +2,10 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import emailjs from "@emailjs/browser";
 import { createInquiry } from "../services/inquiryService";
+import {
+  trackCTAClick,
+  trackContactSubmission,
+} from "../services/analyticsService";
 import { getSiteContent } from "../services/siteContentService";
 import "../styles/start-your-experience.css";
 import { motion, AnimatePresence } from "framer-motion";
@@ -230,7 +234,20 @@ const StartYourExperienceSection = () => {
 
     try {
       setIsSubmitting(true);
+
+      await trackCTAClick({
+        buttonName: "Submit Experience Request",
+        section: "Start Experience Form",
+      });
+
+      await trackContactSubmission();
+
       setIsSubmitted(true);
+
+      await trackCTAClick({
+        buttonName: "Form Completed",
+        section: "Start Experience Form",
+      });
 
       (async () => {
         try {
@@ -791,10 +808,30 @@ const StartYourExperienceSection = () => {
 
                 {/* ACTIONS */}
                 <div className="form-actions">
-                  <button type="button" className="btn-back" id="prevStep">
+                  <button
+                    type="button"
+                    className="btn-back"
+                    id="prevStep"
+                    onClick={() =>
+                      trackCTAClick({
+                        buttonName: "Previous Step",
+                        section: "Start Experience Form",
+                      }).catch(console.error)
+                    }
+                  >
                     Back
                   </button>
-                  <button type="button" className="btn-next" id="nextStep">
+                  <button
+                    type="button"
+                    className="btn-next"
+                    id="nextStep"
+                    onClick={() =>
+                      trackCTAClick({
+                        buttonName: "Next Step",
+                        section: "Start Experience Form",
+                      }).catch(console.error)
+                    }
+                  >
                     Next
                   </button>
                   <button

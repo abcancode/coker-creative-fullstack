@@ -18,29 +18,20 @@ export const getVisitorId = () => {
   if (!visitorId) {
     visitorId = generateId();
     localStorage.setItem(VISITOR_KEY, visitorId);
+    console.log("Created visitorId:", visitorId);
   }
 
   return visitorId;
 };
 
-/**
- * Browser Session
- * Lives in sessionStorage
- */
 export const getSessionId = () => {
   let sessionId = sessionStorage.getItem(SESSION_KEY);
 
   if (!sessionId) {
     sessionId = generateId();
     sessionStorage.setItem(SESSION_KEY, sessionId);
+    console.log("Created sessionId:", sessionId);
   }
 
   return sessionId;
-};
-
-/**
- * Optional helper
- */
-export const resetSession = () => {
-  sessionStorage.removeItem(SESSION_KEY);
 };

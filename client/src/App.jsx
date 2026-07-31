@@ -15,6 +15,7 @@ import ExperienceDetails from "./pages/ExperienceDetails";
 // ADMIN
 import Login from "./admin/pages/Login";
 import Dashboard from "./admin/pages/Dashboard";
+import Analytics from "./admin/pages/Analytics";
 
 import AdminExperiences from "./admin/pages/Experiences";
 import ViewExperience from "./admin/pages/ViewExperience";
@@ -72,6 +73,16 @@ function App() {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* ANALYTICS */}
+        <Route
+          path="/admin/analytics"
+          element={
+            <ProtectedRoute>
+              <Analytics />
             </ProtectedRoute>
           }
         />

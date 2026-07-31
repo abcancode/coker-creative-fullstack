@@ -2,11 +2,24 @@ import { useParams } from "react-router-dom";
 import HeroExperienceDetails from "../components/HeroExperienceDetails.jsx";
 import "../styles/experience-details.css";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 import { Helmet } from "react-helmet-async";
 
 import { getExperience } from "../services/experienceService";
+
+import {
+  trackExperienceView,
+  trackGalleryOpen,
+  trackGalleryImageView,
+} from "../services/analyticsService";
+
+import {
+  trackVideoPlay,
+  trackVideoPause,
+  trackVideoComplete,
+  trackVideoProgress,
+} from "../services/analyticsService";
 
 const CLOUD_NAME = "djp4j1mvn";
 
@@ -41,6 +54,10 @@ const ExperienceDetails = () => {
 
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
+  const videoRef = useRef(null);
+
+  const watchedMilestones = useRef(new Set());
+
   // FETCH EXPERIENCE
   useEffect(() => {
     fetchExperience();
@@ -55,6 +72,33 @@ const ExperienceDetails = () => {
       console.log(error);
     }
   };
+
+  // TRACK EXPERIENCE VIEW
+  useEffect(() => {
+    if (!data) return;
+
+    trackExperienceView({
+      slug: data.slug,
+      title: data.title,
+      page: window.location.pathname,
+    }).catch(console.error);
+  }, [data?.slug]);
+
+  // RESET VIDEO MILESTONES
+  useEffect(() => {
+    watchedMilestones.current.clear();
+  }, [data?.slug]);
+
+  // TRACK GALLERY IMAGE VIEW
+  useEffect(() => {
+    if (lightboxIndex === null || !data) return;
+
+    trackGalleryImageView({
+      experienceSlug: data.slug,
+      experienceTitle: data.title,
+      imageIndex: lightboxIndex + 1,
+    }).catch(console.error);
+  }, [lightboxIndex, data?.slug]);
 
   // HERO IMAGES
   const heroUrls = useMemo(
@@ -251,6 +295,7 @@ const ExperienceDetails = () => {
               }}
             >
               <video
+                ref={videoRef}
                 controls
                 playsInline
                 preload="metadata"
@@ -258,6 +303,48 @@ const ExperienceDetails = () => {
                 style={{
                   width: "100%",
                   display: "block",
+                }}
+                onPlay={() => {
+                  trackVideoPlay({
+                    title: data.title,
+                    duration: videoRef.current?.duration || 0,
+                  }).catch(console.error);
+                }}
+                onPause={() => {
+                  trackVideoPause({
+                    title: data.title,
+                    duration: videoRef.current?.currentTime || 0,
+                  }).catch(console.error);
+                }}
+                onEnded={() => {
+                  trackVideoComplete({
+                    title: data.title,
+                    duration: videoRef.current?.duration || 0,
+                  }).catch(console.error);
+                }}
+                onTimeUpdate={() => {
+                  const video = videoRef.current;
+
+                  if (!video || !video.duration) return;
+
+                  const percentage = Math.floor(
+                    (video.currentTime / video.duration) * 100,
+                  );
+
+                  [25, 50, 75, 100].forEach((milestone) => {
+                    if (
+                      percentage >= milestone &&
+                      !watchedMilestones.current.has(milestone)
+                    ) {
+                      watchedMilestones.current.add(milestone);
+
+                      trackVideoProgress({
+                        title: data.title,
+                        duration: video.currentTime,
+                        watchPercentage: milestone,
+                      }).catch(console.error);
+                    }
+                  });
                 }}
               >
                 <source src={data.featuredVideo} type="video/mp4" />
@@ -276,7 +363,14 @@ const ExperienceDetails = () => {
             alt={data.title}
             loading="lazy"
             decoding="async"
-            onClick={() => setLightboxIndex(i)}
+            onClick={() => {
+              trackGalleryOpen({
+                experienceSlug: data.slug,
+                experienceTitle: data.title,
+              }).catch(console.error);
+
+              setLightboxIndex(i);
+            }}
           />
         ))}
       </section>

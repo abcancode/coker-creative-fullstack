@@ -6,6 +6,8 @@ import "../styles/hero.css";
 
 import { getSiteContent } from "../services/siteContentService";
 
+import { trackCTAClick } from "../services/analyticsService";
+
 const Hero = () => {
   const videoRef = useRef(null);
 
@@ -108,11 +110,29 @@ const Hero = () => {
         <h1>{heroTitle}</h1>
 
         <div className="hero-buttons">
-          <Link to={primaryButtonLink} className="btn btn-outline">
+          <Link
+            to={primaryButtonLink}
+            className="btn btn-outline"
+            onClick={() =>
+              trackCTAClick({
+                buttonName: primaryButtonText,
+                section: "Hero",
+              }).catch(console.error)
+            }
+          >
             {primaryButtonText}
           </Link>
 
-          <Link to={secondaryButtonLink} className="btn btn-filled">
+          <Link
+            to={secondaryButtonLink}
+            className="btn btn-filled"
+            onClick={() =>
+              trackCTAClick({
+                buttonName: secondaryButtonText,
+                section: "Hero",
+              }).catch(console.error)
+            }
+          >
             {secondaryButtonText}
           </Link>
         </div>

@@ -9,6 +9,10 @@ function Sidebar({ currentPath, mobileOpen, setMobileOpen }) {
       path: "/admin/dashboard",
     },
     {
+      label: "Analytics",
+      path: "/admin/analytics",
+    },
+    {
       label: "Experiences",
       path: "/admin/experiences",
     },
