@@ -133,6 +133,11 @@ const analyticsSchema = new mongoose.Schema(
         default: "",
       },
 
+      imageIndex: {
+        type: Number,
+        default: 0,
+      },
+
       duration: {
         type: Number,
         default: 0,

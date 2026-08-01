@@ -14,6 +14,17 @@ import crypto from "node:crypto";
  */
 const VALID_EVENTS = Object.values(ANALYTICS_EVENTS);
 
+const EMPTY_DASHBOARD = {
+  totalEvents: 0,
+  uniqueVisitors: 0,
+  sessions: 0,
+  pageViews: 0,
+  experienceViews: 0,
+  videoPlays: 0,
+  ctaClicks: 0,
+  contactSubmissions: 0,
+};
+
 /**
  * Validate analytics payload.
  */
@@ -96,6 +107,8 @@ export const trackEvent = async (req) => {
 
       fileName: payload.fileName || "",
 
+      imageIndex: payload.imageIndex || 0,
+
       duration: payload.duration || 0,
 
       watchPercentage: payload.watchPercentage || 0,
@@ -132,6 +145,10 @@ const getOverview = async () => {
           $addToSet: "$visitorId",
         },
 
+        uniqueSessions: {
+          $addToSet: "$sessionId",
+        },
+
         pageViews: {
           $sum: {
             $cond: [{ $eq: ["$event", ANALYTICS_EVENTS.PAGE_VIEW] }, 1, 0],
@@ -154,6 +171,12 @@ const getOverview = async () => {
           },
         },
 
+        ctaClicks: {
+          $sum: {
+            $cond: [{ $eq: ["$event", ANALYTICS_EVENTS.CTA_CLICK] }, 1, 0],
+          },
+        },
+
         contactSubmissions: {
           $sum: {
             $cond: [{ $eq: ["$event", ANALYTICS_EVENTS.CONTACT_SUBMIT] }, 1, 0],
@@ -164,22 +187,17 @@ const getOverview = async () => {
   ]);
 
   if (!overview.length) {
-    return {
-      totalVisitors: 0,
-      uniqueVisitors: 0,
-      pageViews: 0,
-      experienceViews: 0,
-      videoPlays: 0,
-      contactSubmissions: 0,
-    };
+    return EMPTY_DASHBOARD;
   }
 
   return {
-    totalVisitors: overview[0].totalEvents,
+    totalEvents: overview[0].totalEvents,
     uniqueVisitors: overview[0].uniqueVisitors.length,
+    sessions: overview[0].uniqueSessions.length,
     pageViews: overview[0].pageViews,
     experienceViews: overview[0].experienceViews,
     videoPlays: overview[0].videoPlays,
+    ctaClicks: overview[0].ctaClicks,
     contactSubmissions: overview[0].contactSubmissions,
   };
 };
@@ -192,19 +210,34 @@ const getTraffic = async () => {
     {
       $group: {
         _id: {
-          $dateToString: {
-            format: "%Y-%m-%d",
-            date: "$createdAt",
+          date: {
+            $dateToString: {
+              format: "%Y-%m-%d",
+              date: "$createdAt",
+            },
           },
+          sessionId: "$sessionId",
         },
+      },
+    },
+    {
+      $group: {
+        _id: "$_id.date",
         visitors: {
           $sum: 1,
         },
       },
     },
     {
+      $project: {
+        _id: 0,
+        date: "$_id",
+        visitors: 1,
+      },
+    },
+    {
       $sort: {
-        _id: 1,
+        date: 1,
       },
     },
   ]);
@@ -226,6 +259,41 @@ const getDevices = async () => {
     {
       $sort: {
         total: -1,
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        name: "$_id",
+        total: 1,
+      },
+    },
+  ]);
+};
+
+/**
+ * Browser Breakdown
+ */
+const getBrowsers = async () => {
+  return Analytics.aggregate([
+    {
+      $group: {
+        _id: "$visitor.browser",
+        total: {
+          $sum: 1,
+        },
+      },
+    },
+    {
+      $sort: {
+        total: -1,
+      },
+    },
+    {
+      $project: {
+        _id: 0,
+        name: "$_id",
+        total: 1,
       },
     },
   ]);
@@ -259,6 +327,13 @@ const getCountries = async () => {
     {
       $limit: 10,
     },
+    {
+      $project: {
+        _id: 0,
+        name: "$_id",
+        total: 1,
+      },
+    },
   ]);
 };
 
@@ -280,6 +355,10 @@ const getTopExperiences = async () => {
           $first: "$metadata.experienceTitle",
         },
 
+        page: {
+          $first: "$page",
+        },
+
         views: {
           $sum: 1,
         },
@@ -293,6 +372,15 @@ const getTopExperiences = async () => {
     {
       $limit: 10,
     },
+    {
+      $project: {
+        _id: 0,
+        slug: "$_id",
+        title: 1,
+        page: 1,
+        views: 1,
+      },
+    },
   ]);
 };
 
@@ -304,7 +392,18 @@ const getRecentActivity = async () => {
     .sort({ createdAt: -1 })
     .limit(20)
     .select(
-      "event page title metadata.experienceTitle metadata.buttonName createdAt",
+      `
+      event
+      page
+      title
+      metadata.experienceSlug
+      metadata.experienceTitle
+      metadata.buttonName
+      metadata.section
+      metadata.videoTitle
+      metadata.imageIndex
+      createdAt
+      `,
     )
     .lean();
 };
@@ -317,6 +416,7 @@ export const getDashboard = async () => {
     overview,
     traffic,
     devices,
+    browsers,
     countries,
     topExperiences,
     recentActivity,
@@ -324,6 +424,7 @@ export const getDashboard = async () => {
     getOverview(),
     getTraffic(),
     getDevices(),
+    getBrowsers(),
     getCountries(),
     getTopExperiences(),
     getRecentActivity(),
@@ -333,6 +434,7 @@ export const getDashboard = async () => {
     overview,
     traffic,
     devices,
+    browsers,
     countries,
     topExperiences,
     recentActivity,

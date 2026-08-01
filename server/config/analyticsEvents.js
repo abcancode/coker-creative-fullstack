@@ -29,6 +29,7 @@ export const ANALYTICS_EVENTS = {
   VIDEO_PLAY: "video_play",
   VIDEO_PAUSE: "video_pause",
   VIDEO_COMPLETE: "video_complete",
+  VIDEO_PROGRESS: "video_progress",
 
   // ===========================
   // Contact Tracking
