@@ -26,10 +26,27 @@ export const trackEvent = async (req, res) => {
 /**
  * GET /api/analytics/dashboard
  * Retrieve analytics dashboard data
+ *
+ * Supported ranges:
+ * - today
+ * - 7d
+ * - 30d
+ * - thisMonth
+ * - lastMonth
+ * - lifetime
+ *
+ * Custom range:
+ * ?range=custom&startDate=2026-08-01&endDate=2026-08-08
  */
 export const getDashboard = async (req, res) => {
   try {
-    const dashboard = await analyticsService.getDashboard();
+    const { range = "30d", startDate = "", endDate = "" } = req.query;
+
+    const dashboard = await analyticsService.getDashboard({
+      range,
+      startDate,
+      endDate,
+    });
 
     return res.status(200).json({
       success: true,
@@ -38,9 +55,9 @@ export const getDashboard = async (req, res) => {
   } catch (error) {
     console.error("[Analytics] getDashboard:", error);
 
-    return res.status(500).json({
+    return res.status(400).json({
       success: false,
-      message: "Unable to retrieve analytics dashboard.",
+      message: error.message || "Unable to retrieve analytics dashboard.",
     });
   }
 };

@@ -100,13 +100,9 @@ export const trackCTAClick = async ({
 }) => {
   return trackEvent({
     event: "cta_click",
-
     buttonName,
-
     section,
-
     experienceSlug,
-
     experienceTitle,
   });
 };
@@ -122,9 +118,31 @@ export const trackContactSubmission = async () => {
 
 /**
  * Retrieve dashboard analytics.
+ *
+ * Supported ranges:
+ * today
+ * 7d
+ * 30d
+ * thisMonth
+ * lastMonth
+ * lifetime
+ * custom
  */
-export const getDashboard = async () => {
-  const { data } = await api.get("/analytics/dashboard");
+export const getDashboard = async ({
+  range = "30d",
+  startDate = "",
+  endDate = "",
+} = {}) => {
+  const params = {
+    range,
+  };
+
+  if (range === "custom") {
+    params.startDate = startDate;
+    params.endDate = endDate;
+  }
+
+  const { data } = await api.get("/analytics/dashboard", { params });
 
   return data.data;
 };
