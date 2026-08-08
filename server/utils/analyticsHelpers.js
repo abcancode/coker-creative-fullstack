@@ -137,6 +137,12 @@ export const getLanguage = (req) => {
  *
  * Resolves a public IP address into country, region and city.
  */
+/**
+ * IP Geolocation
+ *
+ * Resolves a public IP address into country information
+ * using the IPinfo Lite API.
+ */
 export const getIPGeolocation = async (ipAddress = "") => {
   if (!ipAddress) {
     return {
@@ -190,7 +196,14 @@ export const getIPGeolocation = async (ipAddress = "") => {
 
   try {
     const response = await fetch(
-      `https://ipinfo.io/${encodeURIComponent(ipAddress)}/json?token=${token}`,
+      `https://api.ipinfo.io/lite/${encodeURIComponent(
+        ipAddress,
+      )}?token=${token}`,
+      {
+        headers: {
+          Accept: "application/json",
+        },
+      },
     );
 
     if (!response.ok) {
@@ -208,9 +221,9 @@ export const getIPGeolocation = async (ipAddress = "") => {
     const data = await response.json();
 
     return {
-      country: data.country || "",
-      region: data.region || "",
-      city: data.city || "",
+      country: data.country || data.country_code || "",
+      region: "",
+      city: "",
     };
   } catch (error) {
     console.error("[Analytics] IP geolocation error:", error);

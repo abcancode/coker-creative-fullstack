@@ -13,7 +13,9 @@ async function run() {
     const latest = await Analytics.find()
       .sort({ createdAt: -1 })
       .limit(15)
-      .select("event page visitor.browser visitor.device createdAt")
+      .select(
+        "event page visitor.browser visitor.os visitor.device visitor.language visitor.ipAddress visitor.country visitor.region visitor.city visitor.screenResolution createdAt",
+      )
       .lean();
 
     console.table(
@@ -21,7 +23,14 @@ async function run() {
         event: item.event,
         page: item.page,
         browser: item.visitor?.browser,
+        os: item.visitor?.os,
         device: item.visitor?.device,
+        language: item.visitor?.language,
+        ipAddress: item.visitor?.ipAddress,
+        country: item.visitor?.country,
+        region: item.visitor?.region,
+        city: item.visitor?.city,
+        screenResolution: item.visitor?.screenResolution,
         createdAt: item.createdAt,
       })),
     );
@@ -30,7 +39,8 @@ async function run() {
 
     console.log("\n✅ Done.");
   } catch (err) {
-    console.error(err);
+    console.error("❌ Analytics check failed:", err);
+    process.exitCode = 1;
   }
 }
 
