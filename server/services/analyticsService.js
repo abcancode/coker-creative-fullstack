@@ -6,12 +6,15 @@ import {
   detectOS,
   getIPAddress,
   getLanguage,
+  getIPGeolocation,
 } from "../utils/analyticsHelpers.js";
 import crypto from "node:crypto";
 
 /**
  * Supported analytics events.
  */
+const geoCache = new Map();
+
 const VALID_EVENTS = Object.values(ANALYTICS_EVENTS);
 
 const EMPTY_DASHBOARD = {
@@ -41,8 +44,18 @@ const validatePayload = (payload = {}) => {
 /**
  * Build visitor object from request.
  */
-const buildVisitor = (req) => {
+const buildVisitor = async (req) => {
   const userAgent = req.headers["user-agent"] || "";
+
+  const ipAddress = getIPAddress(req);
+
+  let location = geoCache.get(ipAddress);
+
+  if (!location) {
+    location = await getIPGeolocation(ipAddress);
+
+    geoCache.set(ipAddress, location);
+  }
 
   return {
     browser: detectBrowser(userAgent),
@@ -51,11 +64,11 @@ const buildVisitor = (req) => {
 
     language: getLanguage(req),
 
-    ipAddress: getIPAddress(req),
+    ipAddress,
 
-    country: "",
-    region: "",
-    city: "",
+    country: location.country,
+    region: location.region,
+    city: location.city,
 
     screenResolution:
       req.body.screenResolution || req.headers["x-screen-resolution"] || "",
@@ -85,7 +98,7 @@ export const trackEvent = async (req) => {
 
     referrer: payload.referrer || "",
 
-    visitor: buildVisitor(req),
+    visitor: await buildVisitor(req),
 
     metadata: {
       experienceSlug: payload.experienceSlug || "",

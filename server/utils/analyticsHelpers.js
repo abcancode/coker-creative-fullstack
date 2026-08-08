@@ -131,3 +131,94 @@ export const getIPAddress = (req) => {
 export const getLanguage = (req) => {
   return req.headers["accept-language"]?.split(",")[0] || "";
 };
+
+/**
+ * IP Geolocation
+ *
+ * Resolves a public IP address into country, region and city.
+ */
+export const getIPGeolocation = async (ipAddress = "") => {
+  if (!ipAddress) {
+    return {
+      country: "",
+      region: "",
+      city: "",
+    };
+  }
+
+  // Ignore local/private addresses.
+  if (
+    ipAddress === "127.0.0.1" ||
+    ipAddress === "::1" ||
+    ipAddress.startsWith("10.") ||
+    ipAddress.startsWith("192.168.") ||
+    ipAddress.startsWith("172.16.") ||
+    ipAddress.startsWith("172.17.") ||
+    ipAddress.startsWith("172.18.") ||
+    ipAddress.startsWith("172.19.") ||
+    ipAddress.startsWith("172.20.") ||
+    ipAddress.startsWith("172.21.") ||
+    ipAddress.startsWith("172.22.") ||
+    ipAddress.startsWith("172.23.") ||
+    ipAddress.startsWith("172.24.") ||
+    ipAddress.startsWith("172.25.") ||
+    ipAddress.startsWith("172.26.") ||
+    ipAddress.startsWith("172.27.") ||
+    ipAddress.startsWith("172.28.") ||
+    ipAddress.startsWith("172.29.") ||
+    ipAddress.startsWith("172.30.") ||
+    ipAddress.startsWith("172.31.")
+  ) {
+    return {
+      country: "",
+      region: "",
+      city: "",
+    };
+  }
+
+  const token = process.env.IPINFO_TOKEN;
+
+  if (!token) {
+    console.warn("[Analytics] IPINFO_TOKEN is not configured.");
+
+    return {
+      country: "",
+      region: "",
+      city: "",
+    };
+  }
+
+  try {
+    const response = await fetch(
+      `https://ipinfo.io/${encodeURIComponent(ipAddress)}/json?token=${token}`,
+    );
+
+    if (!response.ok) {
+      console.warn(
+        `[Analytics] IP geolocation failed with status ${response.status}`,
+      );
+
+      return {
+        country: "",
+        region: "",
+        city: "",
+      };
+    }
+
+    const data = await response.json();
+
+    return {
+      country: data.country || "",
+      region: data.region || "",
+      city: data.city || "",
+    };
+  } catch (error) {
+    console.error("[Analytics] IP geolocation error:", error);
+
+    return {
+      country: "",
+      region: "",
+      city: "",
+    };
+  }
+};
