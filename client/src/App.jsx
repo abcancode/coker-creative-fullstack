@@ -32,6 +32,8 @@ import AnalyticsTracker from "./components/AnalyticsTracker";
 import ForgotPassword from "./admin/pages/ForgotPassword";
 import ResetPassword from "./admin/pages/ResetPassword";
 
+import Journal from "./admin/pages/Journal";
+
 import ProtectedRoute from "./admin/routes/ProtectedRoute";
 
 function App() {
@@ -83,6 +85,16 @@ function App() {
           element={
             <ProtectedRoute>
               <Analytics />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* JOURNAL MANAGER */}
+        <Route
+          path="/admin/journal"
+          element={
+            <ProtectedRoute>
+              <Journal />
             </ProtectedRoute>
           }
         />

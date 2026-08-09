@@ -18,6 +18,8 @@ import inquiryRoutes from "./routes/inquiryRoutes.js";
 
 import analyticsRoutes from "./routes/analyticsRoutes.js";
 
+import journalRoutes from "./routes/journalRoutes.js";
+
 dotenv.config();
 
 const app = express();
@@ -39,6 +41,8 @@ app.use("/api/recognitions", recognitionRoutes);
 app.use("/api/inquiries", inquiryRoutes);
 
 app.use("/api/analytics", analyticsRoutes);
+
+app.use("/api/journal", journalRoutes);
 
 // CONNECT DATABASE
 mongoose

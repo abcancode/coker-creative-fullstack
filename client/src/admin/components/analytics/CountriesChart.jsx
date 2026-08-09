@@ -47,7 +47,8 @@ function CountriesChart() {
                 </div>
 
                 <div className="analytics-progress-count">
-                  {country.total.toLocaleString()} visitors
+                  {country.total.toLocaleString()}{" "}
+                  {country.total === 1 ? "visitor" : "visitors"}
                 </div>
               </div>
             );
