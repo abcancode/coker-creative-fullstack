@@ -1,3 +1,4 @@
+import fs from "fs";
 import Experience from "../models/Experience.js";
 import imageKit from "../config/imagekit.js";
 
@@ -111,6 +112,7 @@ export const uploadExperienceImage = async (req, res) => {
       originalname: req.file.originalname,
       mimetype: req.file.mimetype,
       size: req.file.size,
+      path: req.file.path,
     });
 
     console.log(
@@ -118,14 +120,24 @@ export const uploadExperienceImage = async (req, res) => {
       !!process.env.IMAGEKIT_PRIVATE_KEY,
     );
 
-    const result = await imageKit.files.upload({
-      file: req.file.buffer,
-      fileName: req.file.originalname,
-      folder: "/coker-creative/experiences",
-      useUniqueFileName: true,
-    });
+    const result = await imageKit.files.upload(
+      {
+        file: fs.createReadStream(req.file.path),
+        fileName: req.file.originalname,
+        folder: "/coker-creative/experiences",
+        useUniqueFileName: true,
+      },
+      {
+        maxRetries: 0,
+        timeout: 30000,
+      },
+    );
 
-    console.log("[Experience Upload] ImageKit response:", result);
+    console.log("[Experience Upload] ImageKit upload successful:", {
+      url: result.url,
+      fileId: result.fileId,
+      filePath: result.filePath,
+    });
 
     return res.status(200).json({
       message: "Image uploaded successfully",
@@ -138,7 +150,10 @@ export const uploadExperienceImage = async (req, res) => {
 
     return res.status(500).json({
       message: error.message || "Image upload failed",
-      error: error,
     });
+  } finally {
+    if (req.file?.path) {
+      fs.promises.unlink(req.file.path).catch(() => {});
+    }
   }
 };

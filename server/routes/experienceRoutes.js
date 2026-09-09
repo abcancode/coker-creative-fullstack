@@ -9,12 +9,12 @@ import {
   uploadExperienceImage,
 } from "../controllers/experienceController.js";
 
-import upload from "../middleware/uploadMiddleware.js";
+import experienceUpload from "../middleware/experienceUploadMiddleware.js";
 
 const router = express.Router();
 
 // IMAGE UPLOAD
-router.post("/upload", upload.single("image"), uploadExperienceImage);
+router.post("/upload", experienceUpload.single("image"), uploadExperienceImage);
 
 // CREATE
 router.post("/", createExperience);
