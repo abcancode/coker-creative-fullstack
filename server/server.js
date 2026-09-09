@@ -1,6 +1,9 @@
+import "dotenv/config";
+
 import express from "express";
-import dotenv from "dotenv";
+
 import mongoose from "mongoose";
+
 import cors from "cors";
 
 import authRoutes from "./routes/authRoutes.js";
@@ -20,7 +23,7 @@ import analyticsRoutes from "./routes/analyticsRoutes.js";
 
 import journalRoutes from "./routes/journalRoutes.js";
 
-dotenv.config();
+import mediaRoutes from "./routes/mediaRoutes.js";
 
 const app = express();
 
@@ -43,6 +46,8 @@ app.use("/api/inquiries", inquiryRoutes);
 app.use("/api/analytics", analyticsRoutes);
 
 app.use("/api/journal", journalRoutes);
+
+app.use("/api/media", mediaRoutes);
 
 // CONNECT DATABASE
 mongoose

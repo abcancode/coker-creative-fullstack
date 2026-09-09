@@ -1,6 +1,5 @@
 import Experience from "../models/Experience.js";
-import cloudinary from "../config/cloudinary.js";
-import streamifier from "streamifier";
+import imageKit from "../config/imagekit.js";
 
 // CREATE EXPERIENCE
 export const createExperience = async (req, res) => {
@@ -104,41 +103,42 @@ export const uploadExperienceImage = async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({
-        message: "No image uploaded",
+        message: "No image file received",
       });
     }
 
-    const streamUpload = () => {
-      return new Promise((resolve, reject) => {
-        const stream = cloudinary.uploader.upload_stream(
-          {
-            folder: "coker-creative",
-          },
-          (error, result) => {
-            if (result) {
-              resolve(result);
-            } else {
-              reject(error);
-            }
-          },
-        );
+    console.log("[Experience Upload] File received:", {
+      originalname: req.file.originalname,
+      mimetype: req.file.mimetype,
+      size: req.file.size,
+    });
 
-        streamifier.createReadStream(req.file.buffer).pipe(stream);
-      });
-    };
+    console.log(
+      "[Experience Upload] IMAGEKIT_PRIVATE_KEY exists:",
+      !!process.env.IMAGEKIT_PRIVATE_KEY,
+    );
 
-    const result = await streamUpload();
+    const result = await imageKit.files.upload({
+      file: req.file.buffer,
+      fileName: req.file.originalname,
+      folder: "/coker-creative/experiences",
+      useUniqueFileName: true,
+    });
 
-    res.status(200).json({
+    console.log("[Experience Upload] ImageKit response:", result);
+
+    return res.status(200).json({
       message: "Image uploaded successfully",
-      imageUrl: result.secure_url,
-      publicId: result.public_id,
+      imageUrl: result.url,
+      fileId: result.fileId || "",
+      filePath: result.filePath || "",
     });
   } catch (error) {
-    console.log(error);
+    console.error("[Experience Upload] ERROR:", error);
 
-    res.status(500).json({
-      message: error.message,
+    return res.status(500).json({
+      message: error.message || "Image upload failed",
+      error: error,
     });
   }
 };

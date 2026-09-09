@@ -1,0 +1,355 @@
+{
+  "generatedAt": "2026-09-07T11:14:49.711Z",
+  "files": {
+    "fisayo-folabi": {
+      "ff/fisayo-1.jpeg": {
+        "localPath": "ff/fisayo-1.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-1.jpeg",
+        "fileId": "6a9e5428ead997d09ad0d4ed",
+        "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-1.jpeg",
+        "fileName": "fisayo-1.jpeg",
+        "status": "uploaded"
+      },
+      "ff/fisayo-2.jpeg": {
+        "localPath": "ff/fisayo-2.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-2.jpeg",
+        "fileId": "6a9e542bead997d09ad0e09a",
+        "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-2.jpeg",
+        "fileName": "fisayo-2.jpeg",
+        "status": "uploaded"
+      },
+      "ff/fisayo-3.jpeg": {
+        "localPath": "ff/fisayo-3.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-3.jpeg",
+        "fileId": "6a9e542cead997d09ad0ebe2",
+        "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-3.jpeg",
+        "fileName": "fisayo-3.jpeg",
+        "status": "uploaded"
+      },
+      "ff/fisayo-4.jpeg": {
+        "localPath": "ff/fisayo-4.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-4.jpeg",
+        "fileId": "6a9e542eead997d09ad0f444",
+        "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-4.jpeg",
+        "fileName": "fisayo-4.jpeg",
+        "status": "uploaded"
+      },
+      "ff/fisayo-and-folabi.jpeg": {
+        "localPath": "ff/fisayo-and-folabi.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-and-folabi.jpeg",
+        "fileId": "6a9e5430ead997d09ad0fedb",
+        "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-and-folabi.jpeg",
+        "fileName": "fisayo-and-folabi.jpeg",
+        "status": "uploaded"
+      }
+    },
+    "obi-dina": {
+      "od/obi-1.jpg": {
+        "localPath": "od/obi-1.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-1.jpg",
+        "fileId": "6a9e5433ead997d09ad11a6d",
+        "filePath": "/coker-creative/experiences/obi-dina/obi-1.jpg",
+        "fileName": "obi-1.jpg",
+        "status": "uploaded"
+      },
+      "od/obi-2.jpg": {
+        "localPath": "od/obi-2.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-2.jpg",
+        "fileId": "6a9e5437ead997d09ad14205",
+        "filePath": "/coker-creative/experiences/obi-dina/obi-2.jpg",
+        "fileName": "obi-2.jpg",
+        "status": "uploaded"
+      },
+      "od/obi-3.jpg": {
+        "localPath": "od/obi-3.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-3.jpg",
+        "fileId": "6a9e5441ead997d09ad18bd0",
+        "filePath": "/coker-creative/experiences/obi-dina/obi-3.jpg",
+        "fileName": "obi-3.jpg",
+        "status": "uploaded"
+      },
+      "od/obi-4.jpg": {
+        "localPath": "od/obi-4.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-4.jpg",
+        "fileId": "6a9e544aead997d09ad1cce8",
+        "filePath": "/coker-creative/experiences/obi-dina/obi-4.jpg",
+        "fileName": "obi-4.jpg",
+        "status": "uploaded"
+      },
+      "od/obi-and-dina.jpg": {
+        "localPath": "od/obi-and-dina.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-and-dina.jpg",
+        "fileId": "6a9e544dead997d09ad1e23c",
+        "filePath": "/coker-creative/experiences/obi-dina/obi-and-dina.jpg",
+        "fileName": "obi-and-dina.jpg",
+        "status": "uploaded"
+      }
+    },
+    "neye-rotimi": {
+      "nr/nenye-and-rotimi.jpg": {
+        "localPath": "nr/nenye-and-rotimi.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/nenye-and-rotimi.jpg",
+        "fileId": "6a9e544eead997d09ad1f7db",
+        "filePath": "/coker-creative/experiences/neye-rotimi/nenye-and-rotimi.jpg",
+        "fileName": "nenye-and-rotimi.jpg",
+        "status": "uploaded"
+      },
+      "nr/neye-1.jpg": {
+        "localPath": "nr/neye-1.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-1.jpg",
+        "fileId": "6a9e5450ead997d09ad2067d",
+        "filePath": "/coker-creative/experiences/neye-rotimi/neye-1.jpg",
+        "fileName": "neye-1.jpg",
+        "status": "uploaded"
+      },
+      "nr/neye-2.jpg": {
+        "localPath": "nr/neye-2.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-2.jpg",
+        "fileId": "6a9e5451ead997d09ad21bff",
+        "filePath": "/coker-creative/experiences/neye-rotimi/neye-2.jpg",
+        "fileName": "neye-2.jpg",
+        "status": "uploaded"
+      },
+      "nr/neye-3.jpg": {
+        "localPath": "nr/neye-3.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-3.jpg",
+        "fileId": "6a9e5452ead997d09ad22b8a",
+        "filePath": "/coker-creative/experiences/neye-rotimi/neye-3.jpg",
+        "fileName": "neye-3.jpg",
+        "status": "uploaded"
+      },
+      "nr/neye-4.jpg": {
+        "localPath": "nr/neye-4.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-4.jpg",
+        "fileId": "6a9e5454ead997d09ad23072",
+        "filePath": "/coker-creative/experiences/neye-rotimi/neye-4.jpg",
+        "fileName": "neye-4.jpg",
+        "status": "uploaded"
+      }
+    },
+    "dara-tosin": {
+      "dt/Dara-1.jpg": {
+        "localPath": "dt/Dara-1.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-1.jpg",
+        "fileId": "6a9e5455ead997d09ad234d3",
+        "filePath": "/coker-creative/experiences/dara-tosin/Dara-1.jpg",
+        "fileName": "Dara-1.jpg",
+        "status": "uploaded"
+      },
+      "dt/Dara-2.jpg": {
+        "localPath": "dt/Dara-2.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-2.jpg",
+        "fileId": "6a9e5457ead997d09ad23c15",
+        "filePath": "/coker-creative/experiences/dara-tosin/Dara-2.jpg",
+        "fileName": "Dara-2.jpg",
+        "status": "uploaded"
+      },
+      "dt/Dara-3.jpg": {
+        "localPath": "dt/Dara-3.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-3.jpg",
+        "fileId": "6a9e5458ead997d09ad24564",
+        "filePath": "/coker-creative/experiences/dara-tosin/Dara-3.jpg",
+        "fileName": "Dara-3.jpg",
+        "status": "uploaded"
+      },
+      "dt/Dara-4.jpg": {
+        "localPath": "dt/Dara-4.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-4.jpg",
+        "fileId": "6a9e5459ead997d09ad24a45",
+        "filePath": "/coker-creative/experiences/dara-tosin/Dara-4.jpg",
+        "fileName": "Dara-4.jpg",
+        "status": "uploaded"
+      },
+      "dt/dara-and-tosin.jpg": {
+        "localPath": "dt/dara-and-tosin.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/dara-and-tosin.jpg",
+        "fileId": "6a9e545bead997d09ad25049",
+        "filePath": "/coker-creative/experiences/dara-tosin/dara-and-tosin.jpg",
+        "fileName": "dara-and-tosin.jpg",
+        "status": "uploaded"
+      }
+    },
+    "foa-80": {
+      "foa/foa-1.jpg": {
+        "localPath": "foa/foa-1.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-1.jpg",
+        "fileId": "6a9e545dead997d09ad256df",
+        "filePath": "/coker-creative/experiences/foa-80/foa-1.jpg",
+        "fileName": "foa-1.jpg",
+        "status": "uploaded"
+      },
+      "foa/foa-2.jpg": {
+        "localPath": "foa/foa-2.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-2.jpg",
+        "fileId": "6a9e545fead997d09ad26717",
+        "filePath": "/coker-creative/experiences/foa-80/foa-2.jpg",
+        "fileName": "foa-2.jpg",
+        "status": "uploaded"
+      },
+      "foa/foa-3.jpg": {
+        "localPath": "foa/foa-3.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-3.jpg",
+        "fileId": "6a9e5462ead997d09ad27fae",
+        "filePath": "/coker-creative/experiences/foa-80/foa-3.jpg",
+        "fileName": "foa-3.jpg",
+        "status": "uploaded"
+      },
+      "foa/foa-80.jpg": {
+        "localPath": "foa/foa-80.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-80.jpg",
+        "fileId": "6a9e5465ead997d09ad28db7",
+        "filePath": "/coker-creative/experiences/foa-80/foa-80.jpg",
+        "fileName": "foa-80.jpg",
+        "status": "uploaded"
+      }
+    },
+    "owambe-30": {
+      "ow/owambe-1.jpg": {
+        "localPath": "ow/owambe-1.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-1.jpg",
+        "fileId": "6a9e5467ead997d09ad2a362",
+        "filePath": "/coker-creative/experiences/owambe-30/owambe-1.jpg",
+        "fileName": "owambe-1.jpg",
+        "status": "uploaded"
+      },
+      "ow/owambe-2.jpg": {
+        "localPath": "ow/owambe-2.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-2.jpg",
+        "fileId": "6a9e5469ead997d09ad2b263",
+        "filePath": "/coker-creative/experiences/owambe-30/owambe-2.jpg",
+        "fileName": "owambe-2.jpg",
+        "status": "uploaded"
+      },
+      "ow/owambe-3.jpg": {
+        "localPath": "ow/owambe-3.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-3.jpg",
+        "fileId": "6a9e546bead997d09ad2ccb5",
+        "filePath": "/coker-creative/experiences/owambe-30/owambe-3.jpg",
+        "fileName": "owambe-3.jpg",
+        "status": "uploaded"
+      },
+      "ow/owambe-4.jpg": {
+        "localPath": "ow/owambe-4.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-4.jpg",
+        "fileId": "6a9e546dead997d09ad2d9d9",
+        "filePath": "/coker-creative/experiences/owambe-30/owambe-4.jpg",
+        "fileName": "owambe-4.jpg",
+        "status": "uploaded"
+      },
+      "ow/owambe-30.jpg": {
+        "localPath": "ow/owambe-30.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-30.jpg",
+        "fileId": "6a9e5470ead997d09ad2ee83",
+        "filePath": "/coker-creative/experiences/owambe-30/owambe-30.jpg",
+        "fileName": "owambe-30.jpg",
+        "status": "uploaded"
+      }
+    },
+    "maggi": {
+      "mg/maggi-1.jpg": {
+        "localPath": "mg/maggi-1.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi-1.jpg",
+        "fileId": "6a9e5471ead997d09ad2fe1d",
+        "filePath": "/coker-creative/experiences/maggi/maggi-1.jpg",
+        "fileName": "maggi-1.jpg",
+        "status": "uploaded"
+      },
+      "mg/maggi-2.jpeg": {
+        "localPath": "mg/maggi-2.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi-2.jpeg",
+        "fileId": "6a9e5473ead997d09ad3128f",
+        "filePath": "/coker-creative/experiences/maggi/maggi-2.jpeg",
+        "fileName": "maggi-2.jpeg",
+        "status": "uploaded"
+      },
+      "mg/maggi-3.jpg": {
+        "localPath": "mg/maggi-3.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi-3.jpg",
+        "fileId": "6a9e547dead997d09ad34709",
+        "filePath": "/coker-creative/experiences/maggi/maggi-3.jpg",
+        "fileName": "maggi-3.jpg",
+        "status": "uploaded"
+      },
+      "mg/maggi.jpg": {
+        "localPath": "mg/maggi.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi.jpg",
+        "fileId": "6a9e5480ead997d09ad35a7a",
+        "filePath": "/coker-creative/experiences/maggi/maggi.jpg",
+        "fileName": "maggi.jpg",
+        "status": "uploaded"
+      }
+    },
+    "lala": {
+      "lala/lala-1.jpeg": {
+        "localPath": "lala/lala-1.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-1.jpeg",
+        "fileId": "6a9e5482ead997d09ad37074",
+        "filePath": "/coker-creative/experiences/lala/lala-1.jpeg",
+        "fileName": "lala-1.jpeg",
+        "status": "uploaded"
+      },
+      "lala/lala-2.jpeg": {
+        "localPath": "lala/lala-2.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-2.jpeg",
+        "fileId": "6a9e5483ead997d09ad37cb9",
+        "filePath": "/coker-creative/experiences/lala/lala-2.jpeg",
+        "fileName": "lala-2.jpeg",
+        "status": "uploaded"
+      },
+      "lala/lala-3.jpeg": {
+        "localPath": "lala/lala-3.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-3.jpeg",
+        "fileId": "6a9e5485ead997d09ad38cca",
+        "filePath": "/coker-creative/experiences/lala/lala-3.jpeg",
+        "fileName": "lala-3.jpeg",
+        "status": "uploaded"
+      },
+      "lala/lala-4.jpeg": {
+        "localPath": "lala/lala-4.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-4.jpeg",
+        "fileId": "6a9e5486ead997d09ad393e2",
+        "filePath": "/coker-creative/experiences/lala/lala-4.jpeg",
+        "fileName": "lala-4.jpeg",
+        "status": "uploaded"
+      },
+      "lala/lala.jpeg": {
+        "localPath": "lala/lala.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala.jpeg",
+        "fileId": "6a9e5487ead997d09ad39901",
+        "filePath": "/coker-creative/experiences/lala/lala.jpeg",
+        "fileName": "lala.jpeg",
+        "status": "uploaded"
+      }
+    },
+    "niyi-40": {
+      "niyi/niyi-40.jpg": {
+        "localPath": "niyi/niyi-40.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/niyi-40/niyi-40.jpg",
+        "fileId": "6a9e9ca2ead997d09afa77de",
+        "filePath": "/coker-creative/experiences/niyi-40/niyi-40.jpg",
+        "fileName": "niyi-40.jpg",
+        "status": "uploaded"
+      }
+    },
+    "kai": {
+      "kai.jpeg": {
+        "localPath": "kai.jpeg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/kai/kai.jpeg",
+        "fileId": "6a9e9ca5ead997d09afa7da1",
+        "filePath": "/coker-creative/experiences/kai/kai.jpeg",
+        "fileName": "kai.jpeg",
+        "status": "uploaded"
+      }
+    },
+    "shea-moisture": {
+      "shea-moisture.jpg": {
+        "localPath": "shea-moisture.jpg",
+        "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/shea-moisture/shea-moisture.jpg",
+        "fileId": "6a9e9caaead997d09afa90e4",
+        "filePath": "/coker-creative/experiences/shea-moisture/shea-moisture.jpg",
+        "fileName": "shea-moisture.jpg",
+        "status": "uploaded"
+      }
+    }
+  }
+}

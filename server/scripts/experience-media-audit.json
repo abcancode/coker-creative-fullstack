@@ -1,0 +1,1705 @@
+{
+  "generatedAt": "2026-09-07T11:30:08.982Z",
+  "databaseExperienceCount": 12,
+  "summary": {
+    "fullyImageKit": 0,
+    "partiallyImageKit": 0,
+    "stillCloudinary": 12,
+    "noRecoveredLocalMedia": 1,
+    "unmappedExperiences": 1
+  },
+  "experiences": [
+    {
+      "id": "6a142d00d9497e6bfeef07b9",
+      "slug": "fisayo-folabi",
+      "title": "FISAYO & FOLABI",
+      "category": "Wedding Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 4,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 4,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707033/coker-creative/zb6icrckuon6qiruim7i.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707035/coker-creative/ruqwpkyxcaxlspzdytmm.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707037/coker-creative/xstaykyzg4zkfmc0llxo.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707044/coker-creative/selm8lfdlojl7czu0cns.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 8,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 8,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707068/coker-creative/tdd1dmnzxtjidvu2s8dk.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707069/coker-creative/zvpikokjjzt7hn1ekmhd.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707071/coker-creative/hz6jehgoa1rfqkkc70ug.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707076/coker-creative/ud91pafgfdhzofdfpdv3.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707078/coker-creative/c79amdm5rs6vtdlb5l7x.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707126/coker-creative/wjgbogndviqdwopvfkjk.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707127/coker-creative/vkkyqwercsqlwdbafllq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779707129/coker-creative/l21c5drdutti84ips43r.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": "https://res.cloudinary.com/djp4j1mvn/video/upload/v1781119518/zyrzeeel58uvjeipe1ef.mp4"
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 7,
+        "galleryCount": 9
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "ff",
+        "exists": true,
+        "files": [
+          "fisayo-1.jpeg",
+          "fisayo-2.jpeg",
+          "fisayo-3.jpeg",
+          "fisayo-4.jpeg",
+          "fisayo-and-folabi.jpeg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 5,
+        "files": [
+          {
+            "localPath": "ff/fisayo-1.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-1.jpeg",
+            "fileId": "6a9e5428ead997d09ad0d4ed",
+            "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-1.jpeg",
+            "fileName": "fisayo-1.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ff/fisayo-2.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-2.jpeg",
+            "fileId": "6a9e542bead997d09ad0e09a",
+            "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-2.jpeg",
+            "fileName": "fisayo-2.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ff/fisayo-3.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-3.jpeg",
+            "fileId": "6a9e542cead997d09ad0ebe2",
+            "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-3.jpeg",
+            "fileName": "fisayo-3.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ff/fisayo-4.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-4.jpeg",
+            "fileId": "6a9e542eead997d09ad0f444",
+            "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-4.jpeg",
+            "fileName": "fisayo-4.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ff/fisayo-and-folabi.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/fisayo-folabi/fisayo-and-folabi.jpeg",
+            "fileId": "6a9e5430ead997d09ad0fedb",
+            "filePath": "/coker-creative/experiences/fisayo-folabi/fisayo-and-folabi.jpeg",
+            "fileName": "fisayo-and-folabi.jpeg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 12,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 12,
+        "recoveredLocalCount": 5,
+        "recoveredImageKitCount": 5,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a1459419e9b1cc09d40ec48",
+      "slug": "obi-dina",
+      "title": "OBI & DINA",
+      "category": "Wedding Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 7,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 7,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779718056/coker-creative/kjyrurs4qxx9yyokdk43.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779718993/coker-creative/pzqbp34nsztt4ouz1jzd.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719006/coker-creative/l3g2azszzuovynb3sx7l.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719013/coker-creative/ghigawvzqikxcmdvdqwn.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719024/coker-creative/xjinznllkixiy80ub4xy.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719038/coker-creative/fi655qou0le2modpmikn.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719053/coker-creative/cc10odq9deh9p9gxgnru.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 9,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 9,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719094/coker-creative/rnrq97aurvfbfwzrqem6.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719121/coker-creative/jxrmyxehyelmnmbcloiu.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719122/coker-creative/qvvbjaijxzr3nikt4aaj.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719130/coker-creative/jizpyenzworbf3773lx2.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719135/coker-creative/jsxyor1842qt222r8gue.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719139/coker-creative/im8uj5ggvl2neijmnwrq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719140/coker-creative/g6tj5k8txb0awl4jivtk.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719145/coker-creative/f9irwqj8gca9g97v7qnc.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 9,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719150/coker-creative/w9vm9ho2bro23yuqo7c1.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 4,
+        "galleryCount": 8
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "od",
+        "exists": true,
+        "files": [
+          "obi-1.jpg",
+          "obi-2.jpg",
+          "obi-3.jpg",
+          "obi-4.jpg",
+          "obi-and-dina.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 5,
+        "files": [
+          {
+            "localPath": "od/obi-1.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-1.jpg",
+            "fileId": "6a9e5433ead997d09ad11a6d",
+            "filePath": "/coker-creative/experiences/obi-dina/obi-1.jpg",
+            "fileName": "obi-1.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "od/obi-2.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-2.jpg",
+            "fileId": "6a9e5437ead997d09ad14205",
+            "filePath": "/coker-creative/experiences/obi-dina/obi-2.jpg",
+            "fileName": "obi-2.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "od/obi-3.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-3.jpg",
+            "fileId": "6a9e5441ead997d09ad18bd0",
+            "filePath": "/coker-creative/experiences/obi-dina/obi-3.jpg",
+            "fileName": "obi-3.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "od/obi-4.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-4.jpg",
+            "fileId": "6a9e544aead997d09ad1cce8",
+            "filePath": "/coker-creative/experiences/obi-dina/obi-4.jpg",
+            "fileName": "obi-4.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "od/obi-and-dina.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/obi-dina/obi-and-dina.jpg",
+            "fileId": "6a9e544dead997d09ad1e23c",
+            "filePath": "/coker-creative/experiences/obi-dina/obi-and-dina.jpg",
+            "fileName": "obi-and-dina.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 16,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 16,
+        "recoveredLocalCount": 5,
+        "recoveredImageKitCount": 5,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a145d8ad95b2a81eb5fc152",
+      "slug": "neye-rotimi",
+      "title": "NEYE & ROTIMI",
+      "category": "Wedding Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 5,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 5,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719352/coker-creative/pvv7xeplh4ombzrar0rv.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719354/coker-creative/l7w0zbqzvmurjy8akohq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719355/coker-creative/jar8tvltcvdjprgxprua.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719357/coker-creative/qxeidudtsbgwc3bsexji.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719358/coker-creative/jtjjpee9lycfnfhzsx9r.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 9,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 9,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719392/coker-creative/oa4rckvurygobpt3bpwk.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719398/coker-creative/nzojsrb8osmd30blsa9w.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719410/coker-creative/idrwewd1abqs2jkhzwic.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719423/coker-creative/m09sgbovaicu7wme9x9q.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719430/coker-creative/qozfcmklhc11ybuu7vub.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719440/coker-creative/v0htmmmywdbkvv8sibzi.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719448/coker-creative/aqabxhufoiy93ktuqny5.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719458/coker-creative/kphf6lzqfqlmyiulyukp.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 9,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719464/coker-creative/ifms1m0buzju59xp0zvo.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 6,
+        "galleryCount": 9
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "nr",
+        "exists": true,
+        "files": [
+          "nenye-and-rotimi.jpg",
+          "neye-1.jpg",
+          "neye-2.jpg",
+          "neye-3.jpg",
+          "neye-4.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 5,
+        "files": [
+          {
+            "localPath": "nr/nenye-and-rotimi.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/nenye-and-rotimi.jpg",
+            "fileId": "6a9e544eead997d09ad1f7db",
+            "filePath": "/coker-creative/experiences/neye-rotimi/nenye-and-rotimi.jpg",
+            "fileName": "nenye-and-rotimi.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "nr/neye-1.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-1.jpg",
+            "fileId": "6a9e5450ead997d09ad2067d",
+            "filePath": "/coker-creative/experiences/neye-rotimi/neye-1.jpg",
+            "fileName": "neye-1.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "nr/neye-2.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-2.jpg",
+            "fileId": "6a9e5451ead997d09ad21bff",
+            "filePath": "/coker-creative/experiences/neye-rotimi/neye-2.jpg",
+            "fileName": "neye-2.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "nr/neye-3.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-3.jpg",
+            "fileId": "6a9e5452ead997d09ad22b8a",
+            "filePath": "/coker-creative/experiences/neye-rotimi/neye-3.jpg",
+            "fileName": "neye-3.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "nr/neye-4.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/neye-rotimi/neye-4.jpg",
+            "fileId": "6a9e5454ead997d09ad23072",
+            "filePath": "/coker-creative/experiences/neye-rotimi/neye-4.jpg",
+            "fileName": "neye-4.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 14,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 14,
+        "recoveredLocalCount": 5,
+        "recoveredImageKitCount": 5,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a145f43d95b2a81eb5fc153",
+      "slug": "dara-tosin",
+      "title": "DARA & TOSIN",
+      "category": "Wedding Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 5,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 5,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719818/coker-creative/dvbyvumh0s9gb0dpqhfc.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719820/coker-creative/hqnszjrmaevip9rapbwr.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719821/coker-creative/g5sh8mjaoelcafdrnltf.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719822/coker-creative/gbgv1yzrbxm8z4pzfyzm.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719824/coker-creative/kzvdwyaw1rawrfat5xs0.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 9,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 9,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719975/coker-creative/ift83z1lprpys2tjzbut.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719977/coker-creative/dclsrmkhoc2uioazjmbm.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719979/coker-creative/nvc4qsp41hbznvrorzb7.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719980/coker-creative/tgfgiofcyrgxboa3ebj1.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719982/coker-creative/aiqnndfae9rlr7yymn4x.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719984/coker-creative/vuuam8nyfku0muh1up2o.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719985/coker-creative/chdrfalpe0btwxyyypue.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719987/coker-creative/uqn67tvy7uldygbap6hf.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 9,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779719989/coker-creative/vzy1yhfyopcrnx1redzb.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 6,
+        "galleryCount": 9
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "dt",
+        "exists": true,
+        "files": [
+          "Dara-1.jpg",
+          "Dara-2.jpg",
+          "Dara-3.jpg",
+          "Dara-4.jpg",
+          "dara-and-tosin.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 5,
+        "files": [
+          {
+            "localPath": "dt/Dara-1.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-1.jpg",
+            "fileId": "6a9e5455ead997d09ad234d3",
+            "filePath": "/coker-creative/experiences/dara-tosin/Dara-1.jpg",
+            "fileName": "Dara-1.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "dt/Dara-2.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-2.jpg",
+            "fileId": "6a9e5457ead997d09ad23c15",
+            "filePath": "/coker-creative/experiences/dara-tosin/Dara-2.jpg",
+            "fileName": "Dara-2.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "dt/Dara-3.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-3.jpg",
+            "fileId": "6a9e5458ead997d09ad24564",
+            "filePath": "/coker-creative/experiences/dara-tosin/Dara-3.jpg",
+            "fileName": "Dara-3.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "dt/Dara-4.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/Dara-4.jpg",
+            "fileId": "6a9e5459ead997d09ad24a45",
+            "filePath": "/coker-creative/experiences/dara-tosin/Dara-4.jpg",
+            "fileName": "Dara-4.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "dt/dara-and-tosin.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/dara-tosin/dara-and-tosin.jpg",
+            "fileId": "6a9e545bead997d09ad25049",
+            "filePath": "/coker-creative/experiences/dara-tosin/dara-and-tosin.jpg",
+            "fileName": "dara-and-tosin.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 14,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 14,
+        "recoveredLocalCount": 5,
+        "recoveredImageKitCount": 5,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a1463e4d95b2a81eb5fc154",
+      "slug": "foa-80",
+      "title": "FOA 80",
+      "category": "Social Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 4,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 4,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779720427/coker-creative/wpdqvzc2r1frbztjikej.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779720431/coker-creative/gjr98iamlmpsvbouzgaq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779720436/coker-creative/oiey8koeezfqlkr9wydh.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779720442/coker-creative/q6iupok0jphoafiluvpf.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 7,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 7,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721106/coker-creative/v3ig65gddqqfm3rouzmp.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721110/coker-creative/kihcje51db68c6qg6o9d.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721115/coker-creative/r3svhwlbdqfusun41rio.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721119/coker-creative/firgioz0dgaszqgebzec.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721125/coker-creative/aiynnilrsdi8cta5jrps.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721130/coker-creative/o20lcqpvxrnu5pbvjcun.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721135/coker-creative/vrq4ck1j8fqt8jnciknw.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 7,
+        "galleryCount": 7
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "foa",
+        "exists": true,
+        "files": [
+          "foa-1.jpg",
+          "foa-2.jpg",
+          "foa-3.jpg",
+          "foa-80.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 4,
+        "files": [
+          {
+            "localPath": "foa/foa-1.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-1.jpg",
+            "fileId": "6a9e545dead997d09ad256df",
+            "filePath": "/coker-creative/experiences/foa-80/foa-1.jpg",
+            "fileName": "foa-1.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "foa/foa-2.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-2.jpg",
+            "fileId": "6a9e545fead997d09ad26717",
+            "filePath": "/coker-creative/experiences/foa-80/foa-2.jpg",
+            "fileName": "foa-2.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "foa/foa-3.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-3.jpg",
+            "fileId": "6a9e5462ead997d09ad27fae",
+            "filePath": "/coker-creative/experiences/foa-80/foa-3.jpg",
+            "fileName": "foa-3.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "foa/foa-80.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/foa-80/foa-80.jpg",
+            "fileId": "6a9e5465ead997d09ad28db7",
+            "filePath": "/coker-creative/experiences/foa-80/foa-80.jpg",
+            "fileName": "foa-80.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 11,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 11,
+        "recoveredLocalCount": 4,
+        "recoveredImageKitCount": 4,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a146570d95b2a81eb5fc155",
+      "slug": "niyi-40",
+      "title": "NIYI'S 40TH Birthday",
+      "category": "Social Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 1,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 1,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721400/coker-creative/tddzfkwrb6chkfpgn2wk.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 0,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 0,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": []
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": false,
+        "heroCount": 0,
+        "galleryCount": 0
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "niyi",
+        "exists": true,
+        "files": [
+          "niyi-40.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 1,
+        "files": [
+          {
+            "localPath": "niyi/niyi-40.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/niyi-40/niyi-40.jpg",
+            "fileId": "6a9e9ca2ead997d09afa77de",
+            "filePath": "/coker-creative/experiences/niyi-40/niyi-40.jpg",
+            "fileName": "niyi-40.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 1,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 1,
+        "recoveredLocalCount": 1,
+        "recoveredImageKitCount": 1,
+        "localMediaAppearsComplete": true,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a146655d95b2a81eb5fc156",
+      "slug": "owambe-30",
+      "title": "Owambe 30",
+      "category": "Social Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 5,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 5,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721677/coker-creative/hz1pbsouz912fgp6skbl.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721680/coker-creative/lkqwb5s2j26r0pln1m1s.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721682/coker-creative/kchzjwt8rrmgwhtjlmeu.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721685/coker-creative/tlqou23d5hh49745up6f.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721687/coker-creative/zxcu5myydddldej95rtw.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 7,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 7,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721765/coker-creative/idowlxuxshuih2tdpkhp.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721768/coker-creative/cyq9jyosrl4tvpdfoqhx.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721777/coker-creative/o35ftvvts12gtzwojlgq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721780/coker-creative/gsqaeomu8bjzf45f5drj.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721782/coker-creative/op7fcoq7doepwwyepy7z.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721788/coker-creative/ltffdwuor9qoemdzg3pq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779721792/coker-creative/itqfuzgdrnw9cs7ev4gt.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 4,
+        "galleryCount": 7
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "ow",
+        "exists": true,
+        "files": [
+          "owambe-1.jpg",
+          "owambe-2.jpg",
+          "owambe-3.jpg",
+          "owambe-4.jpg",
+          "owambe-30.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 5,
+        "files": [
+          {
+            "localPath": "ow/owambe-1.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-1.jpg",
+            "fileId": "6a9e5467ead997d09ad2a362",
+            "filePath": "/coker-creative/experiences/owambe-30/owambe-1.jpg",
+            "fileName": "owambe-1.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ow/owambe-2.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-2.jpg",
+            "fileId": "6a9e5469ead997d09ad2b263",
+            "filePath": "/coker-creative/experiences/owambe-30/owambe-2.jpg",
+            "fileName": "owambe-2.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ow/owambe-3.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-3.jpg",
+            "fileId": "6a9e546bead997d09ad2ccb5",
+            "filePath": "/coker-creative/experiences/owambe-30/owambe-3.jpg",
+            "fileName": "owambe-3.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ow/owambe-4.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-4.jpg",
+            "fileId": "6a9e546dead997d09ad2d9d9",
+            "filePath": "/coker-creative/experiences/owambe-30/owambe-4.jpg",
+            "fileName": "owambe-4.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "ow/owambe-30.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/owambe-30/owambe-30.jpg",
+            "fileId": "6a9e5470ead997d09ad2ee83",
+            "filePath": "/coker-creative/experiences/owambe-30/owambe-30.jpg",
+            "fileName": "owambe-30.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 12,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 12,
+        "recoveredLocalCount": 5,
+        "recoveredImageKitCount": 5,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a146d21d95b2a81eb5fc157",
+      "slug": "sosky-60",
+      "title": "SOSKY 60",
+      "category": "Social Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 4,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 4,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722380/coker-creative/x3yepfmnnmsui1eorsvz.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722391/coker-creative/jtutnnkohfhezhxznddu.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722400/coker-creative/wwotmssuyv6pd1nefplw.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722410/coker-creative/qhxrmlpalolplaclkemk.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 8,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 8,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722596/coker-creative/g5vfyoebhixsfjonlkcb.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722598/coker-creative/kyzip8lncirjauqfov0k.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722600/coker-creative/tfdczsygessv3xipnuzv.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722602/coker-creative/qclpt8pxfm74q5lrhbpa.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722604/coker-creative/wah6q0trasezegevjets.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722606/coker-creative/eg471zjqu586tslfpugy.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722607/coker-creative/pbc1yj4qzr94fd2zah3t.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779722608/coker-creative/t4ebtd9qq28buwhqmcnk.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 5,
+        "galleryCount": 8
+      },
+      "recoveredLocalMedia": {
+        "type": "unmapped",
+        "path": null,
+        "exists": false,
+        "files": []
+      },
+      "imageKitManifest": {
+        "uploadedCount": 0,
+        "files": []
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 12,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 12,
+        "recoveredLocalCount": 0,
+        "recoveredImageKitCount": 0,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a146e95d95b2a81eb5fc158",
+      "slug": "kai",
+      "title": "kai",
+      "category": "Corporate Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 1,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 1,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779723893/coker-creative/drqqvap4jljknzrmnzlv.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 0,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 0,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": []
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": false,
+        "heroCount": 0,
+        "galleryCount": 0
+      },
+      "recoveredLocalMedia": {
+        "type": "files",
+        "path": null,
+        "exists": true,
+        "files": [
+          "kai.jpeg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 1,
+        "files": [
+          {
+            "localPath": "kai.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/kai/kai.jpeg",
+            "fileId": "6a9e9ca5ead997d09afa7da1",
+            "filePath": "/coker-creative/experiences/kai/kai.jpeg",
+            "fileName": "kai.jpeg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 1,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 1,
+        "recoveredLocalCount": 1,
+        "recoveredImageKitCount": 1,
+        "localMediaAppearsComplete": true,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a1472add95b2a81eb5fc159",
+      "slug": "maggi",
+      "title": "Maggi",
+      "category": "Corporate Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 9,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 9,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724781/coker-creative/dfur3wawkio3hxbyvcn1.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724822/coker-creative/kryqwfjmap0a4jtomgmh.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724825/coker-creative/t9fknltt1hrqa1f73e1l.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724829/coker-creative/bx0m71swqgz31asvelv0.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724832/coker-creative/nsszt7djo2varq9cnglr.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724836/coker-creative/fmtw6xosiigagpalpmql.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724839/coker-creative/culhbb9hjso80dxgzuhn.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724841/coker-creative/bpiu3vsasdr0iensr7mt.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 9,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724843/coker-creative/r8ki4pkejmfpvg0sms6n.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 9,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 9,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724874/coker-creative/lizt7otvg7onk1bpktm7.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724883/coker-creative/coimhuidemfv3x6gzi0p.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724893/coker-creative/mtvkpnd2vpj5benywmd7.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724902/coker-creative/itpcbozivc7tpieb1nd7.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724909/coker-creative/d1oogpywbplkczd5rdd4.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724918/coker-creative/ifqz1ial9mukyi51577a.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724928/coker-creative/gbqqua2qvdaddpzwzud7.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 8,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724938/coker-creative/h7srya2cbocwqsrkykwf.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 9,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779724955/coker-creative/p0synzz7fjrx1fsr3qvj.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 8,
+        "galleryCount": 9
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "mg",
+        "exists": true,
+        "files": [
+          "maggi-1.jpg",
+          "maggi-2.jpeg",
+          "maggi-3.jpg",
+          "maggi.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 4,
+        "files": [
+          {
+            "localPath": "mg/maggi-1.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi-1.jpg",
+            "fileId": "6a9e5471ead997d09ad2fe1d",
+            "filePath": "/coker-creative/experiences/maggi/maggi-1.jpg",
+            "fileName": "maggi-1.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "mg/maggi-2.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi-2.jpeg",
+            "fileId": "6a9e5473ead997d09ad3128f",
+            "filePath": "/coker-creative/experiences/maggi/maggi-2.jpeg",
+            "fileName": "maggi-2.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "mg/maggi-3.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi-3.jpg",
+            "fileId": "6a9e547dead997d09ad34709",
+            "filePath": "/coker-creative/experiences/maggi/maggi-3.jpg",
+            "fileName": "maggi-3.jpg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "mg/maggi.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/maggi/maggi.jpg",
+            "fileId": "6a9e5480ead997d09ad35a7a",
+            "filePath": "/coker-creative/experiences/maggi/maggi.jpg",
+            "fileName": "maggi.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 18,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 18,
+        "recoveredLocalCount": 4,
+        "recoveredImageKitCount": 4,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a1473b6d95b2a81eb5fc15a",
+      "slug": "lala",
+      "title": "Lala",
+      "category": "Corporate Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 5,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 5,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725152/coker-creative/amg3bavfskigiizmy7ht.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725172/coker-creative/vijb3um7itmkix9owc8g.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725173/coker-creative/ahknboahlgkliw1b12wy.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725174/coker-creative/owytlglovsbsodgklsho.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725175/coker-creative/ih8uokquvwqizz7qno5p.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 7,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 7,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725191/coker-creative/maeq1fnsds6w6lxxtajg.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725193/coker-creative/hreqwchsdahklg7ewyff.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725194/coker-creative/cbr5ylpmo4t09caurj8l.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725195/coker-creative/plkzavqcxae0pzwiwnm4.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725196/coker-creative/mkxfjojs3en3e2zhsz1e.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 6,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725198/coker-creative/ujwf7t3vynavxzp21oz2.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 7,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779725199/coker-creative/ieosi8dstqsceypkme8w.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 4,
+        "galleryCount": 7
+      },
+      "recoveredLocalMedia": {
+        "type": "folder",
+        "path": "lala",
+        "exists": true,
+        "files": [
+          "lala-1.jpeg",
+          "lala-2.jpeg",
+          "lala-3.jpeg",
+          "lala-4.jpeg",
+          "lala.jpeg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 5,
+        "files": [
+          {
+            "localPath": "lala/lala-1.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-1.jpeg",
+            "fileId": "6a9e5482ead997d09ad37074",
+            "filePath": "/coker-creative/experiences/lala/lala-1.jpeg",
+            "fileName": "lala-1.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "lala/lala-2.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-2.jpeg",
+            "fileId": "6a9e5483ead997d09ad37cb9",
+            "filePath": "/coker-creative/experiences/lala/lala-2.jpeg",
+            "fileName": "lala-2.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "lala/lala-3.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-3.jpeg",
+            "fileId": "6a9e5485ead997d09ad38cca",
+            "filePath": "/coker-creative/experiences/lala/lala-3.jpeg",
+            "fileName": "lala-3.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "lala/lala-4.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala-4.jpeg",
+            "fileId": "6a9e5486ead997d09ad393e2",
+            "filePath": "/coker-creative/experiences/lala/lala-4.jpeg",
+            "fileName": "lala-4.jpeg",
+            "status": "uploaded"
+          },
+          {
+            "localPath": "lala/lala.jpeg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/lala/lala.jpeg",
+            "fileId": "6a9e5487ead997d09ad39901",
+            "filePath": "/coker-creative/experiences/lala/lala.jpeg",
+            "fileName": "lala.jpeg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 12,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 12,
+        "recoveredLocalCount": 5,
+        "recoveredImageKitCount": 5,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    },
+    {
+      "id": "6a14741ad95b2a81eb5fc15b",
+      "slug": "shea-moisture",
+      "title": "Shea Moisture",
+      "category": "Corporate Experience",
+      "status": "still-cloudinary",
+      "database": {
+        "hero": {
+          "total": 3,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 3,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874226/coker-creative/kixndbnyiox8hejjad5v.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874231/coker-creative/jfsglxfn0ichhsknarug.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874236/coker-creative/l39yslscibytnnlakber.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "gallery": {
+          "total": 5,
+          "imageKitUrls": 0,
+          "cloudinaryUrls": 5,
+          "otherUrls": 0,
+          "bareIds": 0,
+          "empty": 0,
+          "values": [
+            {
+              "index": 1,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874284/coker-creative/p1tr7rdkjbdojqqz8q8j.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 2,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874294/coker-creative/k9q0zb5gnffydc5aauax.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 3,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874303/coker-creative/glbqigvgglj9u9g94xlz.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 4,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874329/coker-creative/urf9peqehojaa8wfkkaq.jpg",
+              "type": "cloudinary-url"
+            },
+            {
+              "index": 5,
+              "value": "https://res.cloudinary.com/djp4j1mvn/image/upload/v1779874353/coker-creative/zn687im8onwldwluiokk.jpg",
+              "type": "cloudinary-url"
+            }
+          ]
+        },
+        "featuredVideo": ""
+      },
+      "staticSource": {
+        "exists": true,
+        "heroCount": 4,
+        "galleryCount": 12
+      },
+      "recoveredLocalMedia": {
+        "type": "files",
+        "path": null,
+        "exists": true,
+        "files": [
+          "shea-moisture.jpg"
+        ]
+      },
+      "imageKitManifest": {
+        "uploadedCount": 1,
+        "files": [
+          {
+            "localPath": "shea-moisture.jpg",
+            "url": "https://ik.imagekit.io/uhcs0lcwu/coker-creative/experiences/shea-moisture/shea-moisture.jpg",
+            "fileId": "6a9e9caaead997d09afa90e4",
+            "filePath": "/coker-creative/experiences/shea-moisture/shea-moisture.jpg",
+            "fileName": "shea-moisture.jpg",
+            "status": "uploaded"
+          }
+        ]
+      },
+      "migrationAssessment": {
+        "databaseImageCount": 8,
+        "databaseImageKitCount": 0,
+        "databaseLegacyCount": 8,
+        "recoveredLocalCount": 1,
+        "recoveredImageKitCount": 1,
+        "localMediaAppearsComplete": false,
+        "exactMappingConfirmed": false
+      }
+    }
+  ]
+}

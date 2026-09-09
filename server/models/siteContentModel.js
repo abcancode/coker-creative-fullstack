@@ -22,9 +22,19 @@ const siteContentSchema = new mongoose.Schema(
 
     secondaryButtonLink: String,
 
+    // ============================================================
+    // SEO
+    // ============================================================
+
     seoTitle: String,
 
     seoDescription: String,
+
+    seoImage: String,
+
+    // ============================================================
+    // HOME
+    // ============================================================
 
     whatWeDoTitle: String,
 
@@ -59,6 +69,10 @@ const siteContentSchema = new mongoose.Schema(
     footerLocations: String,
 
     footerCopyright: String,
+
+    // ============================================================
+    // WHO WE ARE
+    // ============================================================
 
     whoHeroTitle: String,
 
@@ -96,10 +110,19 @@ const siteContentSchema = new mongoose.Schema(
 
     visionaryImage: String,
 
+    // ============================================================
+    // VISUAL TRANSITION
+    // ============================================================
+
     visualTransitionImages: {
       type: [String],
       default: [],
     },
+
+    // ============================================================
+    // START YOUR EXPERIENCE
+    // ============================================================
+
     startExperienceTitle: String,
 
     startExperienceSubtitle: String,
