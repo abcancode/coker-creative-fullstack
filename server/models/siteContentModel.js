@@ -131,6 +131,11 @@ const siteContentSchema = new mongoose.Schema(
       type: [String],
       default: [],
     },
+    startYourExperienceImages: {
+      type: [String],
+      default: [],
+    },
+
     // ============================================================
     // JOURNAL HERO
     // ============================================================
