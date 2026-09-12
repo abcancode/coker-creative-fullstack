@@ -131,6 +131,14 @@ const siteContentSchema = new mongoose.Schema(
       type: [String],
       default: [],
     },
+    // ============================================================
+    // JOURNAL HERO
+    // ============================================================
+
+    journalHeroImages: {
+      type: [String],
+      default: [],
+    },
   },
   {
     timestamps: true,

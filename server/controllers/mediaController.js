@@ -23,6 +23,12 @@ export const getImageKitAuth = async (req, res) => {
     const authenticationParameters =
       imageKit.helper.getAuthenticationParameters();
 
+    res.set({
+      "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+      Pragma: "no-cache",
+      Expires: "0",
+    });
+
     return res.status(200).json({
       ...authenticationParameters,
       publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
